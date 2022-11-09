@@ -3,11 +3,15 @@
     <div class="close-block">
 
     </div>
-    <h3 class="title text-center">Sign in</h3>
+    <h3 class="title text-center">Sign up</h3>
     <p class="text text-center">
         Sign in to your account using email and password provided during registration.
     </p>
     <form action="" class="form">
+        <div class="input-field col-12">
+            <label for="fullname" class="input-label">Full Name</label>
+            <input id="fullname" type="text" class="input" placeholder="Your full name">
+        </div>
         <div class="input-field col-12">
             <label for="email" class="input-label">Email</label>
             <input id="email" type="text" class="input" placeholder="Your working email">
@@ -19,19 +23,23 @@
                 <button class="show" (click)="togglePassword($event)"></button>
             </div>
         </div>
+        <div class="input-field input-group col-12">
+            <label for="confirm-password" class="input-label">Confirm Password</label>
+            <div class="input-group">
+                <input id="confirm-password" [type]="isConfirmVisible ? 'text' : 'password'" class="input col-12">
+                <button class="show" (click)="toggleConfirm($event)"></button>
+            </div>
+        </div>
         <div class="d-flex space-between">
             <div class="col col-6">
                 <input type="checkbox" id="agreement" name="agreement"/>
-                <label for="agreement">Keep me signed in</label>
-            </div>
-            <div class="col col-6">
-                <a href="#" class="link">Forgot password?</a>
+                <label for="agreement">Remember me</label>
             </div>
         </div>
         <button class="btn btn-submit">
             Sign in
         </button>
-        <p class="text text-dark">Don't have an account? <a href="" class="link">Sign up</a></p>
+        <p class="text text-dark">Already have an account? <a href="" class="link">Sign in</a></p>
     </form>
     <hr>
     <p class="text text-center">Or sign in with</p>
