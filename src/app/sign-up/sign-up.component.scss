@@ -1,31 +1,6 @@
+@import "../styles/general";
+
 //general
-
-@mixin main-font {
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.col-12 {
-  width: 100%;
-}
-
-
-.d-flex {
-  display: flex;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.space-between {
-  justify-content: space-between;
-}
 
 :host {
   @include main-font;
@@ -38,6 +13,7 @@
   border: 1px solid #E5E8ED;
   box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   border-radius: 4px;
+  position: relative;
 }
 
 .title {
@@ -66,26 +42,14 @@
 .form {
   margin-top: 24px;
   padding-bottom: 24px;
-  // border-bottom: 1px solid #E5E8ED;
 }
 
 .input {
-  background: #FFFFFF;
   height: 44px;
-  border: 1px solid #D7DADD;
-  border-radius: 4px;
   padding: 13px 16px;
-  outline: none;
-
-  &-group {
-    position: relative;
-  }
 
   &::placeholder {
-    color: #9A9CA5;
-    // font-weight: 400;
     font-size: 14px;
-    line-height: 160%;
   }
 
   &-label {
@@ -94,17 +58,11 @@
   }
 
   &-field {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 20px;
   }
 }
 
 hr {
-  border: none;
-  color: #E5E8ED;
-  background-color: #E5E8ED;
-  height: 1px;
   margin: 0 -48px;
   margin-bottom: 24px;
 }
@@ -114,51 +72,17 @@ input[type="checkbox"] {
 }
 
 label {
-  cursor: pointer;
-  margin-right: 5px;
-  color: #424551;
   font-size: 14px;
 }
 
 input[type="checkbox"] + label:before {
-  border: 1px solid #D7DADD;
-  content: "\00a0";
-  display: inline-block;
-  font: 16px/1em sans-serif;
-  height: 16px;
   margin: 2px 12px 0 0;
-  padding: 0;
-  width: 16px;
-  min-width: 16px;
-  border-radius: 3px;
-  //background-color: #FF3F3A;
-}
-input[type="checkbox"]:checked + label:before {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #FF3F3A;
-  border: 1px solid #FF3F3A;
-  background-image: url("../../assets/images/check.svg");
-}
-
-input[type="checkbox"] + label {
-  display: flex;
-}
-
-.fogot-password {
-  color: #FF3F3A;
 }
 
 .btn {
-  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
-  border-radius: 4px;
-  color: #FFFFFF;
-  letter-spacing: 0.5px;
   height: 44px;
 
   &-submit {
-    width: 100%;
-    font-weight: 700;
     margin-top: 24px;
     margin-bottom: 24px;
   }
@@ -182,4 +106,13 @@ input[type="checkbox"] + label {
   svg:hover {
     fill: #FF3F3A;
   }
+}
+
+.close {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../assets/images/cross.svg");
+  position: absolute;
+  right: 28px;
+  top: 28px;
 }

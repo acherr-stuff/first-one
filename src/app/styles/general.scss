@@ -1,0 +1,142 @@
+// variables
+$white: #FFFFFF;
+$gray-900: #1E212C;
+$gray-800: #424551;
+$gray-700: #787A80;
+$gray-600: #9A9CA5;
+$gray-400: #D7DADD;
+$red: #FF3F3A;
+$orange: #F75E05;
+
+
+
+@mixin main-font {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.input {
+  background: $white;
+  //height: 44px;
+  border: 1px solid $gray-400;
+  border-radius: 4px;
+ // padding: 13px 16px;
+  outline: none;
+
+  &-group {
+    position: relative;
+  }
+
+  &::placeholder {
+    color: $gray-600;
+   // font-size: 14px;
+    line-height: 160%;
+  }
+
+  &-label {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  &-field {
+    display: flex;
+    flex-direction: column;
+    //margin-bottom: 20px;
+  }
+}
+
+hr {
+  border: none;
+  color: #E5E8ED;
+  background-color: #E5E8ED;
+  height: 1px;
+}
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  margin-right: 5px;
+  color: $gray-800;
+  //font-size: 14px;
+}
+
+input[type="checkbox"] + label:before {
+  border: 1px solid $gray-400;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 2px 12px 0 0;
+  padding: 0;
+  width: 16px;
+  min-width: 16px;
+  border-radius: 3px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $red;
+  border: 1px solid $red;
+  background-image: url("../../assets/images/check.svg");
+}
+
+input[type="checkbox"] + label {
+  display: flex;
+}
+
+.btn {
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  border-radius: 4px;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+
+  &-submit {
+    width: 100%;
+    font-weight: 700;
+    //margin-top: 24px;
+    //margin-bottom: 24px;
+  }
+}

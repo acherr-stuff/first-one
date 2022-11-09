@@ -1,45 +1,6 @@
-@mixin main-font {
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-
-// general
-
-.d-flex {
-  display: flex;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-12 {
-  width: 100%;
-}
+@import "../styles/general";
 
 //main styles
-
-h1 {
-  font-weight: 900;
-  font-size: 46px;
-  line-height: 130%;
-}
-
-h6 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  margin-top: 0;
-}
 
 .container {
   max-width: 1230px;
@@ -47,54 +8,18 @@ h6 {
 }
 
 .btn {
-  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
-  border-radius: 4px;
-  color: #FFFFFF;
-  letter-spacing: 0.5px;
   height: 52px;
 
   &-header {
     padding: 13px 40px;
   }
 
-  &-submit {
-    width: 100%;
-    font-weight: 700;
-  }
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
-label {
-  cursor: pointer;
-  margin-right: 5px;
-  color: #424551;
-  //color: $dark;
-}
 
 input[type="checkbox"] + label:before {
-  border: 1px solid #FF3F3A;
-  content: "\00a0";
-  display: inline-block;
-  font: 16px/1em sans-serif;
-  height: 16px;
   margin: 3px 12px 0 0;
   padding: 0;
-  width: 16px;
-  min-width: 16px;
-  border-radius: 3px;
-  background-color: #FF3F3A;
-}
-input[type="checkbox"]:checked + label:before {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../../assets/images/check.svg");
-}
-
-input[type="checkbox"] + label {
-  display: flex;
 }
 
 .section {
@@ -111,25 +36,12 @@ input[type="checkbox"] + label {
   }
 }
 
-
-
 .input {
-  background: #FFFFFF;
   height: 52px;
-  border: 1px solid #D7DADD;
-  border-radius: 4px;
   padding: 13px 16px;
-  outline: none;
-
-  &-group {
-    position: relative;
-  }
 
   &::placeholder {
-    color: #9A9CA5;
-   // font-weight: 400;
     font-size: 16px;
-    line-height: 160%;
   }
 
   &-label {
@@ -137,9 +49,8 @@ input[type="checkbox"] + label {
   }
 
   &-field {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 24px;
+    width: 100%;
   }
 
   &-footer {
@@ -147,13 +58,14 @@ input[type="checkbox"] + label {
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding-left: 12px;
     height: 36px;
-    color: #FFFFFF;
+    color: $white;
     width: 100%;
+    font-size: 12px;
 
     &::placeholder {
       font-size: 12px;
       line-height: 150%;
-      color: #FFFFFF;
+      color: $white;
       opacity: 0.6;
 
     }
@@ -176,24 +88,19 @@ input[type="checkbox"] + label {
 }
 
 .logo {
- // float: left;
   margin-right: 60px;
-}
-
-.menu {
-  display: flex;
 }
 
 .menu-item {
   margin-right: 40px;
   line-height: 160%;
   white-space: nowrap;
-  color: #424551;
+  color: $gray-800;
   display: flex;
   align-items: center;
 
   &.active {
-    color: #FF3F3A;
+    color: $red;
   }
 
   a {
@@ -204,7 +111,7 @@ input[type="checkbox"] + label {
 .sign {
   margin-left: 38px;
   white-space: nowrap;
-  color: #424551;
+  color: $gray-800;
 
   .i-person {
     margin-right: 10px;
@@ -216,8 +123,7 @@ input[type="checkbox"] + label {
 
 .contact {
   margin-top: 92px;
-  color: #1E212C;
-  padding-left: 44px;
+  color: $gray-900;
 
   &-list {
     margin-bottom: 48px;
@@ -240,7 +146,7 @@ input[type="checkbox"] + label {
       font-weight: 700;
       font-size: 14px;
       line-height: 150%;
-      color: #787A80;
+      color: $gray-700;
     }
 
     &-text {
@@ -288,17 +194,13 @@ input[type="checkbox"] + label {
 
 .footer {
 
-  background-color: #1E212C;
+  background-color: $gray-900;
 
   @include main-font;
 
   .columns {
     display: flex;
     gap: 80px;
-  }
-
-  .text {
-
   }
 
   &-top {
@@ -313,7 +215,7 @@ input[type="checkbox"] + label {
     .go-top {
       font-size: 14px;
       line-height: 150%;
-      color: #FFFFFF;
+      color: $white;
       font-weight: 700;
       opacity: 0.6;
     }
@@ -321,7 +223,7 @@ input[type="checkbox"] + label {
     .text {
       font-size: 12px;
       line-height: 150%;
-      color: #FFFFFF;
+      color: $white;
       display: inline-block;
     }
 
@@ -337,7 +239,7 @@ input[type="checkbox"] + label {
     font-size: 12px;
     line-height: 150%;
     @include main-font;
-    color: #FFFFFF;
+    color: $white;
     opacity: 0.6;
     max-width: 280px;
     margin-top: 25px;
@@ -345,7 +247,7 @@ input[type="checkbox"] + label {
   }
 
   &-title {
-    color: #FFFFFF;
+    color: $white;
     margin-bottom: 12px;
   }
 
@@ -353,14 +255,13 @@ input[type="checkbox"] + label {
     font-size: 10px;
     line-height: 150%;
     margin-top: 12px;
-    color: #FFFFFF;
-    //width: 100%;
+    color: $white;
   }
 
   &-item {
     font-size: 16px;
     line-height: 160%;
-    color: #FFFFFF;
+    color: $white;
     opacity: 0.6;
     margin-bottom: 8px;
 
