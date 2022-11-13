@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SignInComponent implements OnInit {
 
   isPasswordVisible: boolean = false;
+  public socialIcons: Array<string> = ["facebook2", "google", "twitter", "linkedin"];
 
   constructor() { }
 
@@ -16,7 +17,6 @@ export class SignInComponent implements OnInit {
 
   togglePassword(event: Event) {
     event.preventDefault();
-    console.log("clicked");
     this.isPasswordVisible = !this.isPasswordVisible;
   }
 

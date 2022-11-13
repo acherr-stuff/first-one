@@ -10,6 +10,7 @@ declare var ymaps:any;
 export class ContactsComponent implements OnInit {
 
   public map: any;
+  public socialIcons: Array<string> = ["facebook", "twitter", "youtube", "telegram", "instagram", "linkedin"]
   constructor() { }
 
   ngOnInit(): void {
@@ -18,9 +19,6 @@ export class ContactsComponent implements OnInit {
         center: [50.450100, 30.523400],
         zoom: 12
       });
-      console.log(this.map)
     });
-
   }
-
 }

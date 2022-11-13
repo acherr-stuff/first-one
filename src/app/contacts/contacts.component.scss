@@ -44,6 +44,11 @@ input[type="checkbox"] + label:before {
     font-size: 16px;
   }
 
+  &:focus {
+    border: 1px solid rgba(255, 63, 58, 0.4);
+    box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  }
+
   &-label {
     margin-bottom: 8px;
   }
@@ -61,6 +66,11 @@ input[type="checkbox"] + label:before {
     color: $white;
     width: 100%;
     font-size: 12px;
+
+    &:focus {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: none;
+    }
 
     &::placeholder {
       font-size: 12px;
@@ -162,6 +172,7 @@ input[type="checkbox"] + label:before {
     &-link {
       display: block;
       margin-right: 32px;
+      position: relative;
     }
   }
 
@@ -185,10 +196,6 @@ input[type="checkbox"] + label:before {
   &-form {
     width: 705px;
     margin-left: 90px;
-  }
-
-  &-image {
-    margin-left: -15px;
   }
 }
 
@@ -285,6 +292,8 @@ input[type="checkbox"] + label:before {
 
 }
 
-svg.i-social:hover {
+.i-social ::ng-deep svg:hover {
   fill: $red;
 }
+
+

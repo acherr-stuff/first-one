@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import {InlineSVGModule} from "ng-inline-svg-2";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    InlineSVGModule
   ],
   providers: [],
   bootstrap: [AppComponent]
