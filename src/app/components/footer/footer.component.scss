@@ -1,0 +1,153 @@
+@import "../../styles/general";
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.input {
+  height: 52px;
+  padding: 13px 16px;
+
+  &::placeholder {
+    font-size: 16px;
+  }
+
+  &:focus {
+    border: 1px solid rgba(255, 63, 58, 0.4);
+    box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  }
+
+  &-label {
+    margin-bottom: 8px;
+  }
+
+  &-field {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  &-footer {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 12px;
+    height: 36px;
+    color: $white;
+    width: 100%;
+    font-size: 12px;
+
+    &:focus {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 150%;
+      color: $white;
+      opacity: 0.6;
+
+    }
+  }
+
+  &.textarea {
+    height: 128px;
+  }
+}
+
+.footer {
+
+  background-color: $gray-900;
+
+  @include main-font;
+
+  .columns {
+    display: flex;
+    gap: 80px;
+  }
+
+  &-top {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  &-bottom {
+    background-color: #292C37;
+    padding: 20px 0;
+
+    .go-top {
+      font-size: 14px;
+      line-height: 150%;
+      color: $white;
+      font-weight: 700;
+      opacity: 0.6;
+    }
+
+    .text {
+      font-size: 12px;
+      line-height: 150%;
+      color: $white;
+      display: inline-block;
+    }
+
+    object {
+      display: inline;
+      vertical-align: middle;
+      margin-right: 4px;
+      margin-left: 4px;
+    }
+  }
+
+  &-text {
+    font-size: 12px;
+    line-height: 150%;
+    @include main-font;
+    color: $white;
+    opacity: 0.6;
+    max-width: 280px;
+    margin-top: 25px;
+    margin-bottom: 38px;
+  }
+
+  &-title {
+    color: $white;
+    margin-bottom: 12px;
+  }
+
+  &-subtitle {
+    font-size: 10px;
+    line-height: 150%;
+    margin-top: 12px;
+    color: $white;
+  }
+
+  &-item {
+    font-size: 16px;
+    line-height: 160%;
+    color: $white;
+    opacity: 0.6;
+    margin-bottom: 8px;
+
+    object {
+      margin-right: 8px;
+      margin-top: 3px;
+    }
+  }
+
+  &-social {
+    &-item {
+      margin-right: 20px;
+    }
+  }
+
+  .send {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+}
+
+.i-social ::ng-deep svg:hover {
+  fill: $red;
+}

@@ -1,0 +1,50 @@
+@import "../../styles/general";
+
+.btn {
+  height: 52px;
+
+  &-header {
+    padding: 13px 40px;
+  }
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  @include main-font;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.logo {
+  margin-right: 60px;
+}
+
+.menu-item {
+  margin-right: 40px;
+  line-height: 160%;
+  white-space: nowrap;
+  color: $gray-800;
+  display: flex;
+  align-items: center;
+
+  &.active {
+    color: $red;
+  }
+
+  a {
+    vertical-align: middle;
+  }
+}
+
+.sign {
+  margin-left: 38px;
+  white-space: nowrap;
+  color: $gray-800;
+
+  .i-person {
+    margin-right: 10px;
+  }
+}

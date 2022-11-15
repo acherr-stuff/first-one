@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialogRef} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-sign-in',
@@ -9,8 +10,9 @@ export class SignInComponent implements OnInit {
 
   isPasswordVisible: boolean = false;
   public socialIcons: Array<string> = ["facebook2", "google", "twitter", "linkedin"];
-
-  constructor() { }
+  constructor(
+      private readonly matDialogRef: MatDialogRef<SignInComponent>,
+  ) { }
 
   ngOnInit(): void {
   }
@@ -18,6 +20,10 @@ export class SignInComponent implements OnInit {
   togglePassword(event: Event) {
     event.preventDefault();
     this.isPasswordVisible = !this.isPasswordVisible;
+  }
+
+  close() {
+    this.matDialogRef.close();
   }
 
 }

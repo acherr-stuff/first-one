@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialogRef} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-sign-up',
@@ -12,7 +13,9 @@ export class SignUpComponent implements OnInit {
   public socialIcons: Array<string> = ["facebook2", "google", "twitter", "linkedin"];
 
 
-  constructor() { }
+  constructor(
+      private readonly matDialogRef: MatDialogRef<SignUpComponent>,
+  ) { }
 
   ngOnInit(): void {
   }
@@ -25,5 +28,8 @@ export class SignUpComponent implements OnInit {
   toggleConfirm(event: Event) {
     event.preventDefault();
     this.isConfirmVisible = !this.isConfirmVisible;
+  }
+  close() {
+    this.matDialogRef.close();
   }
 }
