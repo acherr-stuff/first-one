@@ -16,6 +16,7 @@ import {MatDialogModule} from "@angular/material/dialog";
 import { PostComponent } from './components/blog/post/post.component';
 import { BlogAsideComponent } from './components/blog/blog-aside/blog-aside.component';
 import {MatCardModule} from "@angular/material/card";
+import { BlogBannerComponent } from './components/blog/blog-banner/blog-banner.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {MatCardModule} from "@angular/material/card";
     FooterComponent,
     BlogPostPageComponent,
     PostComponent,
-    BlogAsideComponent
+    BlogAsideComponent,
+    BlogBannerComponent
   ],
   imports: [
     BrowserModule,

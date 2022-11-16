@@ -5,6 +5,7 @@ $gray-800: #424551;
 $gray-700: #787A80;
 $gray-600: #9A9CA5;
 $gray-400: #D7DADD;
+$gray-200: #F4F5F7;
 $red: #FF3F3A;
 $orange: #F75E05;
 
@@ -19,6 +20,13 @@ $orange: #F75E05;
 h1 {
   font-weight: 900;
   font-size: 46px;
+  line-height: 130%;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 32px;
   line-height: 130%;
 }
 
@@ -47,12 +55,21 @@ h6 {
   display: flex;
 }
 
+.nowrap {
+  flex-wrap: nowrap;
+}
+
 .align-items-center {
   align-items: center;
 }
 
 .space-between {
   justify-content: space-between;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
 }
 
 .input {
@@ -101,7 +118,6 @@ label {
   cursor: pointer;
   margin-right: 5px;
   color: $gray-800;
-  //font-size: 14px;
 }
 
 input[type="checkbox"] + label:before {
@@ -115,6 +131,7 @@ input[type="checkbox"] + label:before {
   width: 16px;
   min-width: 16px;
   border-radius: 3px;
+  background-color: $white;
 }
 
 input[type="checkbox"]:checked + label:before {

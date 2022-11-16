@@ -1,0 +1,35 @@
+@import "../../../styles/general";
+
+
+
+.banner {
+  background-color: $gray-200;
+  width: 100%;
+  margin: 120px 0;
+
+  &-form {
+    width: 600px;
+    height: fit-content;
+    margin: auto 0;
+
+    .btn {
+      height: 52px;
+      padding: 0px 40px;
+    }
+
+    .input-group {
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .input {
+      height: 52px;
+      padding: 13px 16px;
+      width: 100%;
+    }
+  }
+
+  &-title {
+    margin-bottom: 48px;
+  }
+}
