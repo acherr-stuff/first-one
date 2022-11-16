@@ -2,8 +2,6 @@
     <h6 class="section-subtitle">Our blog</h6>
     <h1 class="section-title">You may also like</h1>
     <div class="recommendation-posts d-flex nowrap space-between">
-        <app-post-card></app-post-card>
-        <app-post-card></app-post-card>
-        <app-post-card></app-post-card>
+        <app-post-card *ngFor="let preview of postPreviews" [category]="preview.category" [type]="preview.type" [image]="preview.image" [date]="preview.date" [timeToListen]="preview.timeToListen" [title]="preview.title" [text]="preview.text"></app-post-card>
     </div>
 </section>

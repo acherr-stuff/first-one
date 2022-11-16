@@ -1,30 +1,33 @@
 <mat-card class="post-card">
         <div class="post-card-picture">
-            <img src="../../../../assets/images/pictures/post-card-img.png" alt="">
+            <img src="{{image}}" alt="">
             <div class="post-card-category d-flex nowrap align-items-center">
                 <div class="icon" [inlineSVG]="'./assets/images/mic.svg'"></div>
-                <div class="text">Podcast</div>
+                <div class="text">{{ type }}</div>
             </div>
         </div>
         <mat-card-subtitle class="post-card-info d-flex">
-            <div class="post-card-info-item category">Design</div>
+            <div class="post-card-info-item category">{{ category }}</div>
             <div class="divider">|</div>
             <div class="post-card-info-item d-flex align-items-center">
                 <div class="icon" [inlineSVG]="'./assets/images/calendar.svg'"></div>
-                <div class="text">July 28, 2020</div>
+                <div class="text"> {{ date }} </div>
             </div>
-            <div class="divider">|</div>
-            <div class="post-card-info-item d-flex align-items-center">
-                <div class="icon" [inlineSVG]="'./assets/images/clock.svg'"></div>
-                <div class="text">36 min</div>
-            </div>
+            <ng-container *ngIf="timeToListen !== undefined">
+                <div class="divider">|</div>
+                <div class="post-card-info-item d-flex align-items-center">
+                    <div class="icon" [inlineSVG]="'./assets/images/clock.svg'"></div>
+                    <div class="text"> {{ timeToListen }} </div>
+                </div>
+            </ng-container>
+
         </mat-card-subtitle>
         <mat-card-title class="post-card-title">
-            What are color profiles and how they work in graphic design
+            {{ title }}
         </mat-card-title>
         <mat-card-content>
             <p class="post-card-text">
-                Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...
+                {{text}}
             </p>
         </mat-card-content>
         <mat-card-actions class="post-card-actions">
