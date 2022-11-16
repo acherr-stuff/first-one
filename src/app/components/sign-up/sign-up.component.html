@@ -1,58 +1,56 @@
-<div class="backdrop">
-    <div class="container modal">
-        <div class="close-block">
-            <button class="close" (click)="close()">
-            </button>
-        </div>
-        <h3 class="title text-center">Sign up</h3>
-        <p class="text text-center">
-            Sign in to your account using email and password provided during registration.
-        </p>
-        <form action="" class="form">
-            <div class="input-field col-12">
-                <label for="fullname" class="input-label">Full Name</label>
-                <input id="fullname" type="text" class="input" placeholder="Your full name">
-            </div>
-            <div class="input-field col-12">
-                <label for="email" class="input-label">Email</label>
-                <input id="email" type="text" class="input" placeholder="Your working email">
-            </div>
-            <div class="input-field input-group col-12">
-                <label for="password" class="input-label" >Password</label>
-                <div class="input-group">
-                    <input id="password" [type]="isPasswordVisible ? 'text' : 'password'" class="input col-12">
-                    <button class="show" *ngIf="!isPasswordVisible" (click)="togglePassword($event)"></button>
-                    <button class="hide" *ngIf="isPasswordVisible" (click)="togglePassword($event)"></button>
-                </div>
-            </div>
-            <div class="input-field input-group col-12">
-                <label for="confirm-password" class="input-label">Confirm Password</label>
-                <div class="input-group">
-                    <input id="confirm-password" [type]="isConfirmVisible ? 'text' : 'password'" class="input col-12">
-                    <button class="show" *ngIf="!isConfirmVisible" (click)="toggleConfirm($event)"></button>
-                    <button class="hide" *ngIf="isConfirmVisible" (click)="toggleConfirm($event)"></button>
-                </div>
-            </div>
-            <div class="d-flex space-between">
-                <div class="col col-6">
-                    <input type="checkbox" id="remember-me" name="remember-me"/>
-                    <label for="remember-me">Remember me</label>
-                </div>
-            </div>
-            <button class="btn btn-submit">
-                Sign in
-            </button>
-            <p class="text text-dark">Already have an account? <a href="" class="link">Sign in</a></p>
-        </form>
-        <hr>
-        <p class="text text-center">Or sign in with</p>
-        <ul class="social d-flex">
-            <li class="social-item" *ngFor="let icon of socialIcons">
-                <a href="#" class="social-link">
-                    <div class="i-social" [inlineSVG]="'./assets/images/' + icon + '.svg'"></div>
-                </a>
-            </li>
-        </ul>
+<div class="backdrop"></div>
+<div mat-dialog-content class="container modal">
+    <div class="close-block">
+        <button class="close" (click)="close()">
+        </button>
     </div>
+    <h3 class="title text-center">Sign up</h3>
+    <p class="text text-center">
+        Sign in to your account using email and password provided during registration.
+    </p>
+    <form action="" class="form">
+        <div class="input-field col-12">
+            <label for="fullname" class="input-label">Full Name</label>
+            <input id="fullname" type="text" class="input" placeholder="Your full name">
+        </div>
+        <div class="input-field col-12">
+            <label for="email" class="input-label">Email</label>
+            <input id="email" type="text" class="input" placeholder="Your working email">
+        </div>
+        <div class="input-field input-group col-12">
+            <label for="password" class="input-label" >Password</label>
+            <div class="input-group">
+                <input id="password" [type]="isPasswordVisible ? 'text' : 'password'" class="input col-12">
+                <button class="show" *ngIf="!isPasswordVisible" (click)="togglePassword($event)"></button>
+                <button class="hide" *ngIf="isPasswordVisible" (click)="togglePassword($event)"></button>
+            </div>
+        </div>
+        <div class="input-field input-group col-12">
+            <label for="confirm-password" class="input-label">Confirm Password</label>
+            <div class="input-group">
+                <input id="confirm-password" [type]="isConfirmVisible ? 'text' : 'password'" class="input col-12">
+                <button class="show" *ngIf="!isConfirmVisible" (click)="toggleConfirm($event)"></button>
+                <button class="hide" *ngIf="isConfirmVisible" (click)="toggleConfirm($event)"></button>
+            </div>
+        </div>
+        <div class="d-flex space-between">
+            <div class="col col-6">
+                <input type="checkbox" id="remember-me" name="remember-me"/>
+                <label for="remember-me">Remember me</label>
+            </div>
+        </div>
+        <button class="btn btn-submit">
+            Sign in
+        </button>
+        <p class="text text-dark">Already have an account? <a href="" class="link">Sign in</a></p>
+    </form>
+    <hr>
+    <p class="text text-center">Or sign in with</p>
+    <ul class="social d-flex">
+        <li class="social-item" *ngFor="let icon of socialIcons">
+            <a href="#" class="social-link">
+                <div class="i-social" [inlineSVG]="'./assets/images/' + icon + '.svg'"></div>
+            </a>
+        </li>
+    </ul>
 </div>
-

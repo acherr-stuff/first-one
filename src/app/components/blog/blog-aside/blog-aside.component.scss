@@ -1,0 +1,126 @@
+@import "../../../styles/general";
+
+//:host {
+//  width: 342px;
+//}
+
+.aside {
+
+  &-blog {
+    width: 342px;
+    color: $gray-800;
+    @include main-font;
+  }
+
+  &-block {
+    margin-bottom: 60px;
+  }
+
+  &-subtitle {
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  &-card {
+    gap: 20px;
+    margin-bottom: 24px;
+    &-image {
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
+      border-radius: 4px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-desc.author {
+      .name {
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+      }
+
+      .text {
+        font-size: 14px;
+        line-height: 150%;
+        color: $gray-700;
+      }
+
+      .socials {
+        margin-top: 20px;
+        gap: 12px;
+      }
+    }
+
+    &-desc.article {
+      .date {
+        color: $gray-700;
+        margin-bottom: 4px;
+
+        .icon {
+          margin-right: 8px;
+          height: 16px;
+        }
+
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        color: $gray-900;
+      }
+
+      .title:hover {
+        color: $red;
+      }
+    }
+  }
+
+  &-tags {
+    margin-top: 31px;
+    gap: 12px;
+    flex-wrap: wrap;
+    .tag {
+      border: 1px solid #D7DADD;
+      border-radius: 4px;
+      padding: 5.5px 16px;
+      color: $gray-700;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 150%;
+    }
+    .tag:hover {
+      background-color: $red;
+      border-color: $red;
+      color: $white;
+    }
+  }
+}
+
+.search {
+  &-block {
+    margin-bottom: 60px;
+  }
+
+  &-input {
+    width: 100%;
+    height: 44px;
+    padding-left: 16px;
+    padding-right: 44px;
+  }
+
+  &-btn {
+    position: absolute;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    right: 14px;
+    top: 14px;
+    background-image: url("../../../../assets/images/search.svg");
+  }
+}

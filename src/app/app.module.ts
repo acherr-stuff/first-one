@@ -14,6 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BlogPostPageComponent } from './components/blog/blog-post-page/blog-post-page.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { PostComponent } from './components/blog/post/post.component';
+import { BlogAsideComponent } from './components/blog/blog-aside/blog-aside.component';
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { PostComponent } from './components/blog/post/post.component';
     NavbarComponent,
     FooterComponent,
     BlogPostPageComponent,
-    PostComponent
+    PostComponent,
+    BlogAsideComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { PostComponent } from './components/blog/post/post.component';
     HttpClientModule,
     InlineSVGModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
