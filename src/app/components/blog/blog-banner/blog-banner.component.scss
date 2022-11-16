@@ -6,6 +6,7 @@
   background-color: $gray-200;
   width: 100%;
   margin: 120px 0;
+  font-size: 16px;
 
   &-form {
     width: 600px;
@@ -15,6 +16,8 @@
     .btn {
       height: 52px;
       padding: 0px 40px;
+      font-weight: 700;
+
     }
 
     .input-group {

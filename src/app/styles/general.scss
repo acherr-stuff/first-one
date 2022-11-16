@@ -72,6 +72,20 @@ h6 {
   margin: 0 auto;
 }
 
+.section {
+  margin-bottom: 170px;
+  @include main-font;
+  &-subtitle {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  &-title {
+    margin-bottom: 40px;
+  }
+}
+
 .input {
   background: $white;
   //height: 44px;

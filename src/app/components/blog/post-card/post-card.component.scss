@@ -1,0 +1,86 @@
+@import "../../../styles/general";
+
+
+.post-card.mat-card {
+  box-shadow: none;
+  padding: 0;
+  max-width: 390px;
+  @include main-font;
+  font-size: 16px;
+}
+
+.post-card-picture {
+  position: relative;
+}
+
+.post-card-category {
+  background-color: $white;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  padding: 1px 8px;
+  gap: 8px;
+  border-radius: 4px;
+
+  .icon {
+    height: 16px;
+  }
+
+
+}
+
+.post-card-info.mat-card-subtitle {
+  font-size: 14px;
+  color: $gray-700;
+  margin-top: 16px;
+
+  .category {
+    font-weight: 700;
+  }
+
+  .divider {
+    margin: 0 12px;
+  }
+
+  .icon {
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .text {
+    line-height: 150%;
+  }
+}
+
+.post-card-title.mat-card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: $gray-900;
+  margin: 8px 0;
+}
+
+.mat-card-content {
+  .post-card-text {
+    font-size: 16px;
+    line-height: 160%;
+    color: $gray-800;
+  }
+}
+
+.post-card-actions.mat-card-actions {
+  margin: 16px 0 0 0;
+
+  .btn-listen {
+    display: flex;
+    gap: 11px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E212C;
+
+    .icon ::ng-deep svg {
+      fill: $red;
+    }
+  }
+}

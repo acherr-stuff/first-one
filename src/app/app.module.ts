@@ -17,6 +17,8 @@ import { PostComponent } from './components/blog/post/post.component';
 import { BlogAsideComponent } from './components/blog/blog-aside/blog-aside.component';
 import {MatCardModule} from "@angular/material/card";
 import { BlogBannerComponent } from './components/blog/blog-banner/blog-banner.component';
+import { BlogRecommendationsComponent } from './components/blog/blog-recommendations/blog-recommendations.component';
+import { PostCardComponent } from './components/blog/post-card/post-card.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { BlogBannerComponent } from './components/blog/blog-banner/blog-banner.c
     BlogPostPageComponent,
     PostComponent,
     BlogAsideComponent,
-    BlogBannerComponent
+    BlogBannerComponent,
+    BlogRecommendationsComponent,
+    PostCardComponent
   ],
   imports: [
     BrowserModule,
