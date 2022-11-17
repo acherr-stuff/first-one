@@ -1,5 +1,10 @@
 @import "../../../styles/general";
+@import "../../../styles/blog";
 
+
+:host {
+  cursor: pointer;
+}
 
 .post-card.mat-card {
   box-shadow: none;

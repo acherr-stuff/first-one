@@ -116,7 +116,7 @@ input[type="checkbox"] + label:before {
   cursor: pointer;
   width: 16px;
   height: 16px;
-  background-image: url("../../../assets/images/eye.svg");
+  background-image: url("../../../assets/images/icons/eye.svg");
 }
 
 .hide {
@@ -126,7 +126,7 @@ input[type="checkbox"] + label:before {
   cursor: pointer;
   width: 16px;
   height: 16px;
-  background-image: url("../../../assets/images/closed-eye.svg");
+  background-image: url("../../../assets/images/icons/closed-eye.svg");
 }
 
 .social {
@@ -142,7 +142,7 @@ input[type="checkbox"] + label:before {
 .close {
   width: 24px;
   height: 24px;
-  background-image: url("../../../assets/images/cross.svg");
+  background-image: url("../../../assets/images/icons/cross.svg");
   position: absolute;
   right: 28px;
   top: 28px;

@@ -1,8 +1,9 @@
 <mat-card class="post-card">
         <div class="post-card-picture">
             <img appMonochrome src="{{image}}" alt="">
-            <div class="post-card-category d-flex nowrap align-items-center">
-                <div class="icon" [inlineSVG]="'./assets/images/mic.svg'"></div>
+            <div class="post-card-category d-flex align-items-center nowrap">
+<!--                <div class="icon" [inlineSVG]="'./assets/images/mic.svg'"></div>-->
+                <mat-icon svgIcon="files" class="icon info-icon"></mat-icon>
                 <div class="text">{{ type }}</div>
             </div>
         </div>
@@ -10,13 +11,13 @@
             <div class="post-card-info-item category">{{ category }}</div>
             <div class="divider">|</div>
             <div class="post-card-info-item d-flex align-items-center">
-                <div class="icon" [inlineSVG]="'./assets/images/calendar.svg'"></div>
+                <mat-icon svgIcon="calendar" class="icon info-icon"></mat-icon>
                 <div class="text"> {{ date }} </div>
             </div>
             <ng-container *ngIf="timeToListen !== undefined">
                 <div class="divider">|</div>
                 <div class="post-card-info-item d-flex align-items-center">
-                    <div class="icon" [inlineSVG]="'./assets/images/clock.svg'"></div>
+                    <mat-icon svgIcon="clock" class="icon info-icon"></mat-icon>
                     <div class="text"> {{ timeToListen }} </div>
                 </div>
             </ng-container>

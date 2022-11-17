@@ -1,0 +1,40 @@
+@import "general";
+
+.category {
+  color: $gray-800;
+  font-size: 14px;
+  &-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+}
+
+.info {
+  color: $gray-700;
+  font-size: 14px;
+  &-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+}
+
+.tags {
+  gap: 12px;
+  flex-wrap: wrap;
+  .tag {
+    border: 1px solid $gray-400;
+    border-radius: 4px;
+    padding: 5.5px 16px;
+    color: $gray-700;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .tag:hover {
+    background-color: $red;
+    border-color: $red;
+    color: $white;
+  }
+}

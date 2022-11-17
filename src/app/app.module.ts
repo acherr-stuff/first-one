@@ -20,6 +20,9 @@ import { BlogBannerComponent } from './components/blog/blog-banner/blog-banner.c
 import { BlogRecommendationsComponent } from './components/blog/blog-recommendations/blog-recommendations.component';
 import { PostCardComponent } from './components/blog/post-card/post-card.component';
 import { MonochromeDirective } from './directives/monochrome.directive';
+import {MatIconModule, MatIconRegistry} from "@angular/material/icon";
+import {IconService} from "./services/icon.service";
+import { PostCardSmallComponent } from './components/blog/post-card-small/post-card-small.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,8 @@ import { MonochromeDirective } from './directives/monochrome.directive';
     BlogBannerComponent,
     BlogRecommendationsComponent,
     PostCardComponent,
-    MonochromeDirective
+    MonochromeDirective,
+    PostCardSmallComponent
   ],
   imports: [
     BrowserModule,
@@ -44,9 +48,10 @@ import { MonochromeDirective } from './directives/monochrome.directive';
     InlineSVGModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
   ],
-  providers: [],
+  providers: [IconService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

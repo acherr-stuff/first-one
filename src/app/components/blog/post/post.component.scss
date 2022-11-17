@@ -1,4 +1,6 @@
 @import "../../../styles/general";
+@import "../../../styles/blog";
+
 
 p {
   margin: 0;
@@ -12,9 +14,6 @@ p {
   &-category {
     margin-bottom: 12px;
 
-    &-icon {
-      margin-right: 8px;
-    }
 
     &-link {
       color: $red;
@@ -48,6 +47,15 @@ p {
   &-socials {
     gap: 12px;
     color: $gray-900;
+
+    .social-icon.mat-icon {
+      height: 20px;
+      width: 20px;
+    }
+
+    .social-icon.mat-icon:hover ::ng-deep svg {
+      fill: $red;
+    }
   }
 
   &-content {
@@ -80,7 +88,7 @@ p {
   &-quote:before {
     content: "";
     position: absolute;
-    background-image: url("../../../../assets/images/braces.svg");
+    background-image: url("../../../../assets/images/icons/braces.svg");
     width: 28px;
     height: 20px;
     left: 0;
@@ -100,7 +108,7 @@ p {
       content: "";
       width: 16px;
       height: 16px;
-      background-image: url("../../../../assets/images/check2.svg");
+      background-image: url("../../../../assets/images/icons/check2.svg");
       left: 0;
     }
 
