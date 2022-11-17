@@ -19,6 +19,7 @@ import {MatCardModule} from "@angular/material/card";
 import { BlogBannerComponent } from './components/blog/blog-banner/blog-banner.component';
 import { BlogRecommendationsComponent } from './components/blog/blog-recommendations/blog-recommendations.component';
 import { PostCardComponent } from './components/blog/post-card/post-card.component';
+import { MonochromeDirective } from './directives/monochrome.directive';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PostCardComponent } from './components/blog/post-card/post-card.compone
     BlogAsideComponent,
     BlogBannerComponent,
     BlogRecommendationsComponent,
-    PostCardComponent
+    PostCardComponent,
+    MonochromeDirective
   ],
   imports: [
     BrowserModule,
