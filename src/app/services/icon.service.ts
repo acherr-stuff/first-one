@@ -16,8 +16,8 @@ export class IconService {
   }
 
   public registerIcons(): void {
-    this.loadIcons(Object.values(Icons), '../../assets/images/icons');
-    this.loadIcons(Object.values(SocialIcons), '../../assets/images/socials');
+    this.loadIcons(Object.values(Icons), 'assets/images/icons');
+    this.loadIcons(Object.values(SocialIcons), 'assets/images/socials');
   }
 
 

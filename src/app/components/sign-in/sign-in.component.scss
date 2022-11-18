@@ -30,7 +30,6 @@
   box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   border-radius: 4px;
   background: $white;
-  //position: relative;
 }
 
 .title {
@@ -133,6 +132,11 @@ input[type="checkbox"] + label:before {
   justify-content: center;
   gap: 12px;
   margin-top: 16px;
+
+  .i-social {
+    width: 20px;
+    height: 20px;
+  }
 
   ::ng-deep svg:hover {
     fill: $red;

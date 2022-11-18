@@ -1,4 +1,4 @@
-@import "../../styles/general";
+@import "../../../styles/general";
 
 .btn {
   height: 52px;
@@ -29,6 +29,7 @@
   color: $gray-800;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   &.active {
     color: $red;

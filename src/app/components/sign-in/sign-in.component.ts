@@ -9,7 +9,7 @@ import {MatDialogRef} from "@angular/material/dialog";
 export class SignInComponent implements OnInit {
 
   isPasswordVisible: boolean = false;
-  public socialIcons: Array<string> = ["facebook2", "google", "twitter", "linkedin"];
+  public socialIcons: Array<string> = ["facebook", "google", "twitter", "linkedin"];
   constructor(
       private readonly matDialogRef: MatDialogRef<SignInComponent>,
   ) { }

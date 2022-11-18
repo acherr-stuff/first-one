@@ -10,7 +10,7 @@ export class SignUpComponent implements OnInit {
 
   isPasswordVisible: boolean = false;
   isConfirmVisible: boolean = false;
-  public socialIcons: Array<string> = ["facebook2", "google", "twitter", "linkedin"];
+  public socialIcons: Array<string> = ["facebook", "google", "twitter", "linkedin"];
 
 
   constructor(

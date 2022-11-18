@@ -1,18 +1,18 @@
 <header class="header container">
     <div class="header-left d-flex">
-        <img src="../../assets/images/logo.svg" alt="" class="logo">
+        <img src="assets/images/logo.svg" alt="" class="logo">
         <ul class="menu d-flex">
-            <li class="menu-item"><a href="#">About Us</a></li>
-            <li class="menu-item"><a href="#">Courses</a></li>
-            <li class="menu-item"><a href="#">Events</a></li>
-            <li class="menu-item"><a href="#">Blog</a></li>
-            <li class="menu-item active"><a href="#">Contacts</a></li>
+            <li class="menu-item">About Us</li>
+            <li class="menu-item">Courses</li>
+            <li class="menu-item">Events</li>
+            <li class="menu-item" routerLink="/blog">Blog</li>
+            <li class="menu-item active" routerLink="/contacts">Contacts</li>
         </ul>
     </div>
     <div class="header-right d-flex">
         <button class="btn btn-header">Get consultation</button>
         <div class="sign d-flex">
-            <img src="../../assets/images/icons/person.svg" alt="" class="i-person">
+            <img src="assets/images/icons/person.svg" alt="" class="i-person">
             <div class="sign-links d-flex align-items-center">
                 <a href="" (click)="openSignInDialog($event)">Log in</a><span> / </span><a href="#" (click)="openSignUpDialog($event)">Register</a>
             </div>

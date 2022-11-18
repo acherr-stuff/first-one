@@ -130,6 +130,11 @@ input[type="checkbox"] + label:before {
   gap: 12px;
   margin-top: 16px;
 
+  .i-social {
+    width: 20px;
+    height: 20px;
+  }
+
   ::ng-deep svg:hover {
     fill: $red;
   }
