@@ -1,0 +1,1523 @@
+[
+  {
+  "src_office_id": 0,
+  "office_name": "",
+  "dt_date": "2022-10-15",
+  "qty_orders": 303,
+  "qty_new": 0,
+  "qty_delivered": 0,
+  "qty_return": 0
+  },
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-16",
+"qty_orders": 3237,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-17",
+"qty_orders": 3380,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-18",
+"qty_orders": 3173,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-19",
+"qty_orders": 3569,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-20",
+"qty_orders": 3911,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-21",
+"qty_orders": 3452,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-22",
+"qty_orders": 3838,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-23",
+"qty_orders": 4010,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-24",
+"qty_orders": 3294,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-25",
+"qty_orders": 3560,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-26",
+"qty_orders": 2836,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-27",
+"qty_orders": 3351,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-28",
+"qty_orders": 3306,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-29",
+"qty_orders": 3478,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-30",
+"qty_orders": 3980,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-10-31",
+"qty_orders": 3558,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-11-01",
+"qty_orders": 3666,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-11-02",
+"qty_orders": 3739,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-11-03",
+"qty_orders": 3668,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-11-04",
+"qty_orders": 4244,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-11-05",
+"qty_orders": 3761,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-11-06",
+"qty_orders": 4363,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-11-07",
+"qty_orders": 4315,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 0,
+"office_name": "",
+"dt_date": "2022-11-08",
+"qty_orders": 4034,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 24,
+"office_name": "Ир. Обл Братск Обручева 27",
+"dt_date": "2022-10-15",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 24,
+"office_name": "Ир. Обл Братск Обручева 27",
+"dt_date": "2022-10-17",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 24,
+"office_name": "Ир. Обл Братск Обручева 27",
+"dt_date": "2022-10-22",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 24,
+"office_name": "Ир. Обл Братск Обручева 27",
+"dt_date": "2022-10-23",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 24,
+"office_name": "Ир. Обл Братск Обручева 27",
+"dt_date": "2022-10-24",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 24,
+"office_name": "Ир. Обл Братск Обручева 27",
+"dt_date": "2022-10-27",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 24,
+"office_name": "Ир. Обл Братск Обручева 27",
+"dt_date": "2022-10-28",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 24,
+"office_name": "Ир. Обл Братск Обручева 27",
+"dt_date": "2022-10-29",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 24,
+"office_name": "Ир. Обл Братск Обручева 27",
+"dt_date": "2022-10-30",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 24,
+"office_name": "Ир. Обл Братск Обручева 27",
+"dt_date": "2022-10-31",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 24,
+"office_name": "Ир. Обл Братск Обручева 27",
+"dt_date": "2022-11-01",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-15",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-17",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-19",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-21",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-22",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-24",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-25",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-26",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-27",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-28",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-29",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-30",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-10-31",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-11-01",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 36,
+"office_name": "Владикавказ пр-кт Коста 107А",
+"dt_date": "2022-11-02",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 48,
+"office_name": "Ре. Алт. Горно-Алтайск Коммунистический пр-кт 125",
+"dt_date": "2022-10-23",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 48,
+"office_name": "Ре. Алт. Горно-Алтайск Коммунистический пр-кт 125",
+"dt_date": "2022-10-25",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 48,
+"office_name": "Ре. Алт. Горно-Алтайск Коммунистический пр-кт 125",
+"dt_date": "2022-10-30",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 48,
+"office_name": "Ре. Алт. Горно-Алтайск Коммунистический пр-кт 125",
+"dt_date": "2022-10-31",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 48,
+"office_name": "Ре. Алт. Горно-Алтайск Коммунистический пр-кт 125",
+"dt_date": "2022-11-01",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 48,
+"office_name": "Ре. Алт. Горно-Алтайск Коммунистический пр-кт 125",
+"dt_date": "2022-11-02",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 48,
+"office_name": "Ре. Алт. Горно-Алтайск Коммунистический пр-кт 125",
+"dt_date": "2022-11-03",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 48,
+"office_name": "Ре. Алт. Горно-Алтайск Коммунистический пр-кт 125",
+"dt_date": "2022-11-04",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 48,
+"office_name": "Ре. Алт. Горно-Алтайск Коммунистический пр-кт 125",
+"dt_date": "2022-11-06",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 48,
+"office_name": "Ре. Алт. Горно-Алтайск Коммунистический пр-кт 125",
+"dt_date": "2022-11-07",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 48,
+"office_name": "Ре. Алт. Горно-Алтайск Коммунистический пр-кт 125",
+"dt_date": "2022-11-08",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 69,
+"office_name": "Киров Ленина 83",
+"dt_date": "2022-11-03",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 87,
+"office_name": "Липецк Первомайская 78",
+"dt_date": "2022-10-15",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 87,
+"office_name": "Липецк Первомайская 78",
+"dt_date": "2022-10-16",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 87,
+"office_name": "Липецк Первомайская 78",
+"dt_date": "2022-10-17",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 87,
+"office_name": "Липецк Первомайская 78",
+"dt_date": "2022-10-18",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 87,
+"office_name": "Липецк Первомайская 78",
+"dt_date": "2022-10-19",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 87,
+"office_name": "Липецк Первомайская 78",
+"dt_date": "2022-11-03",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 87,
+"office_name": "Липецк Первомайская 78",
+"dt_date": "2022-11-05",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 87,
+"office_name": "Липецк Первомайская 78",
+"dt_date": "2022-11-06",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 87,
+"office_name": "Липецк Первомайская 78",
+"dt_date": "2022-11-07",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 87,
+"office_name": "Липецк Первомайская 78",
+"dt_date": "2022-11-08",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 90,
+"office_name": "Магнитогорск пр-кт Карла Маркса 59",
+"dt_date": "2022-10-21",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 90,
+"office_name": "Магнитогорск пр-кт Карла Маркса 59",
+"dt_date": "2022-11-06",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 96,
+"office_name": "Мурманск пр-кт Ленина 96",
+"dt_date": "2022-10-25",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 96,
+"office_name": "Мурманск пр-кт Ленина 96",
+"dt_date": "2022-11-08",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 102,
+"office_name": "При. Кра. Находка Находкинский пр-кт 16А",
+"dt_date": "2022-10-16",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 102,
+"office_name": "При. Кра. Находка Находкинский пр-кт 16А",
+"dt_date": "2022-10-18",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 120,
+"office_name": "Омск Масленникова 82",
+"dt_date": "2022-10-17",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 120,
+"office_name": "Омск Масленникова 82",
+"dt_date": "2022-10-18",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 120,
+"office_name": "Омск Масленникова 82",
+"dt_date": "2022-10-19",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 120,
+"office_name": "Омск Масленникова 82",
+"dt_date": "2022-10-29",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 120,
+"office_name": "Омск Масленникова 82",
+"dt_date": "2022-10-31",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 120,
+"office_name": "Омск Масленникова 82",
+"dt_date": "2022-11-02",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 120,
+"office_name": "Омск Масленникова 82",
+"dt_date": "2022-11-03",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 120,
+"office_name": "Омск Масленникова 82",
+"dt_date": "2022-11-04",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 120,
+"office_name": "Омск Масленникова 82",
+"dt_date": "2022-11-05",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 120,
+"office_name": "Омск Масленникова 82",
+"dt_date": "2022-11-07",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 144,
+"office_name": "ЯН. Окр. Салехард имени Василия Подшибякина 50Б",
+"dt_date": "2022-10-17",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 150,
+"office_name": "Смоленск пр-кт Гагарина 18",
+"dt_date": "2022-11-08",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-10-16",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-10-17",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-10-19",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-10-24",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-10-25",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-10-26",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-10-28",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-11-03",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-11-04",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-11-05",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-11-06",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 153,
+"office_name": "Сочи Первомайская 5",
+"dt_date": "2022-11-07",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 171,
+"office_name": "Тула пр-кт Ленина 72",
+"dt_date": "2022-10-23",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 171,
+"office_name": "Тула пр-кт Ленина 72",
+"dt_date": "2022-10-24",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 171,
+"office_name": "Тула пр-кт Ленина 72",
+"dt_date": "2022-10-25",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 171,
+"office_name": "Тула пр-кт Ленина 72",
+"dt_date": "2022-10-26",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 171,
+"office_name": "Тула пр-кт Ленина 72",
+"dt_date": "2022-10-27",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 174,
+"office_name": "Тюмень Салтыкова-Щедрина 44",
+"dt_date": "2022-10-26",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 174,
+"office_name": "Тюмень Салтыкова-Щедрина 44",
+"dt_date": "2022-10-27",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 174,
+"office_name": "Тюмень Салтыкова-Щедрина 44",
+"dt_date": "2022-10-28",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 174,
+"office_name": "Тюмень Салтыкова-Щедрина 44",
+"dt_date": "2022-10-29",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 174,
+"office_name": "Тюмень Салтыкова-Щедрина 44",
+"dt_date": "2022-10-30",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 174,
+"office_name": "Тюмень Салтыкова-Щедрина 44",
+"dt_date": "2022-11-02",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 192,
+"office_name": "Череповец Милютина 9",
+"dt_date": "2022-10-17",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 192,
+"office_name": "Череповец Милютина 9",
+"dt_date": "2022-10-21",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 192,
+"office_name": "Череповец Милютина 9",
+"dt_date": "2022-10-22",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 192,
+"office_name": "Череповец Милютина 9",
+"dt_date": "2022-10-24",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 192,
+"office_name": "Череповец Милютина 9",
+"dt_date": "2022-10-25",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 192,
+"office_name": "Череповец Милютина 9",
+"dt_date": "2022-10-26",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 192,
+"office_name": "Череповец Милютина 9",
+"dt_date": "2022-11-02",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 192,
+"office_name": "Череповец Милютина 9",
+"dt_date": "2022-11-04",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 192,
+"office_name": "Череповец Милютина 9",
+"dt_date": "2022-11-05",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 192,
+"office_name": "Череповец Милютина 9",
+"dt_date": "2022-11-06",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 192,
+"office_name": "Череповец Милютина 9",
+"dt_date": "2022-11-07",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 195,
+"office_name": "Чита Красноармейская 54",
+"dt_date": "2022-10-23",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 195,
+"office_name": "Чита Красноармейская 54",
+"dt_date": "2022-10-24",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 195,
+"office_name": "Чита Красноармейская 54",
+"dt_date": "2022-10-25",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 195,
+"office_name": "Чита Красноармейская 54",
+"dt_date": "2022-10-29",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 195,
+"office_name": "Чита Красноармейская 54",
+"dt_date": "2022-10-31",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 195,
+"office_name": "Чита Красноармейская 54",
+"dt_date": "2022-11-01",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 195,
+"office_name": "Чита Красноармейская 54",
+"dt_date": "2022-11-03",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-10-20",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-10-21",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-10-22",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-10-23",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-10-24",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-10-25",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-10-29",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-10-30",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-10-31",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-11-02",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-11-04",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-11-05",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-11-06",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 204,
+"office_name": "Ростов-на-Дону Народного Ополчения 213",
+"dt_date": "2022-11-07",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 2,
+"qty_return": 0
+},
+{
+"src_office_id": 378,
+"office_name": "МСК Симферопольский пр 18",
+"dt_date": "2022-11-07",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-16",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-17",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-18",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-19",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-20",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-21",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-23",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-24",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-25",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-26",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-28",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-29",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-30",
+"qty_orders": 3,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-10-31",
+"qty_orders": 3,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-11-02",
+"qty_orders": 2,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-11-03",
+"qty_orders": 3,
+"qty_new": 0,
+"qty_delivered": 3,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-11-05",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-11-06",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-11-07",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 387,
+"office_name": "Красн. Кра. Туапсе Ленина 2",
+"dt_date": "2022-11-08",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 1,
+"qty_return": 0
+},
+{
+"src_office_id": 426,
+"office_name": "Св. Обл Серов Зелёная 7",
+"dt_date": "2022-10-28",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+},
+{
+"src_office_id": 426,
+"office_name": "Св. Обл Серов Зелёная 7",
+"dt_date": "2022-11-03",
+"qty_orders": 1,
+"qty_new": 0,
+"qty_delivered": 0,
+"qty_return": 0
+}
+]

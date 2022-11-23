@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="section charts">
+        <div class="row" *ngFor="let row of rows">
+            <div class="column" *ngFor="let chart of row">
+                <app-chart [chartData]="chart"></app-chart>
+            </div>
+        </div>
+        <h3>General Chart</h3>
+        <app-chart [chartData]="generalChartData" [isGeneral]="true"></app-chart>
+    </div>
+</div>
+
+

@@ -1,0 +1,19 @@
+@import "../../styles/general";
+
+
+.chart-wrapper {
+  display: block;
+  width: 800px;
+  height: 400px;
+}
+
+.chart {
+  width: 800px;
+  height: 400px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
