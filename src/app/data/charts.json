@@ -1501,23 +1501,5 @@
 "qty_new": 0,
 "qty_delivered": 1,
 "qty_return": 0
-},
-{
-"src_office_id": 426,
-"office_name": "Св. Обл Серов Зелёная 7",
-"dt_date": "2022-10-28",
-"qty_orders": 1,
-"qty_new": 0,
-"qty_delivered": 0,
-"qty_return": 0
-},
-{
-"src_office_id": 426,
-"office_name": "Св. Обл Серов Зелёная 7",
-"dt_date": "2022-11-03",
-"qty_orders": 1,
-"qty_new": 0,
-"qty_delivered": 0,
-"qty_return": 0
 }
 ]

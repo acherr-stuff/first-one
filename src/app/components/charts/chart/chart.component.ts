@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, Input, OnInit} from '@angular/core';
-import {ChartParsedDataItem} from "../../../model/chart";
+import {ChartParsedDataItem, ChartParsedItem} from "../../../model/chart";
 import {ChartsService} from "../../../services/charts.service";
 
 @Component({
@@ -7,22 +7,22 @@ import {ChartsService} from "../../../services/charts.service";
   templateUrl: './chart.component.html',
   styleUrls: ['./chart.component.scss']
 })
-export class ChartComponent implements OnInit, AfterViewInit {
+export class ChartComponent implements AfterViewInit {
 
-  @Input() chartData!: ChartParsedDataItem;
+  @Input() chartData!: any;
   @Input() isGeneral?: boolean;
 
   constructor(
       private chartsService: ChartsService
   ) { }
 
-  ngOnInit(): void {
-    //console.log("chartitemdata: ", this.chartData)
-    console.log("isGeneral: ", this.isGeneral)
-  }
 
   ngAfterViewInit() {
-    this.chartsService.createChart(this.chartData, this.isGeneral ? "general" : this.chartData.src_office_id);
+    if (this.isGeneral) {
+      this.chartsService.createChart("general", this.chartData.labels,  this.chartData.data);
+    } else {
+      this.chartsService.createChart(this.chartData[1].src_office_id, this.chartData[1].labels, this.chartData[1].data);
+    }
   }
 
 }

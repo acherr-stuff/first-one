@@ -1,6 +1,15 @@
 @import "../../styles/general";
 
 
+.charts {
+  margin-top: 80px;
+
+  &-title {
+    @include main-font;
+    text-align: center;
+  }
+}
+
 .chart-wrapper {
   display: block;
   width: 800px;
@@ -16,4 +25,6 @@
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
+  gap: 20px;
+  margin-bottom: 40px;
 }

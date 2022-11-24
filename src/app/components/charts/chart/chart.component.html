@@ -1,4 +1,3 @@
-<!--<h3>Chart for office {{chartData.src_office_id}} </h3>-->
-<div id="divChart-{{isGeneral ? 'general' : chartData.src_office_id}}" class="chart-wrapper" >
-    <canvas #canvas id="myChart-{{isGeneral ? 'general' : chartData.src_office_id}}" class="chart" width=800 height=400></canvas>
+<div id="divChart-{{isGeneral ? 'general' : chartData[1].src_office_id}}" class="chart-wrapper" >
+    <canvas id="myChart-{{isGeneral ? 'general' : chartData[1].src_office_id}}" class="chart" width=800 height=400></canvas>
 </div>

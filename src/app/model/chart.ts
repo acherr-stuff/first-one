@@ -18,14 +18,24 @@ export interface ChartParsedDataItem {
     qty_return: number[]
 }
 
-export interface ChartGeneralParsedData {
+export interface ChartParsedItem {
     src_office_id: number;
     office_name: string;
-    dt_date: string[],
+    labels: string[],
+    data: ChartParsedItemData,
+}
+
+export interface ChartParsedItemData {
     qty_orders: number[],
     qty_new: number[],
     qty_delivered: number[],
     qty_return: number[]
+}
+
+
+export interface ChartGeneralParsedData {
+    labels: string[],
+    data: ChartParsedItemData
 }
 
 export interface ChartDataItemFields {

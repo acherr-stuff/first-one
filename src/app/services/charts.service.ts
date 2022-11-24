@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Chart}  from 'chart.js';
 import * as data from '../data/charts.json'
-import {ChartDataItem, ChartParsedDataItem} from "../model/chart";
+import {ChartDataItem, ChartParsedDataItem, ChartParsedItem, ChartParsedItemData} from "../model/chart";
 
 
 // export const group = (data: any) => {
@@ -20,29 +20,32 @@ export class ChartsService {
 
   chartData = new Map();
   chartParsedData!: Array<ChartParsedDataItem>;
- // chartGeneralParsedData!: Map;
+
   constructor() { }
 
+  parseChartData1() {
+    return (Array.from(JSON.parse(JSON.stringify(data))) as Array<ChartDataItem>).reduce((acc: any, cur)=>{
 
-
-  parseChartData(): Array<ChartParsedDataItem> {
-   return (Array.from(JSON.parse(JSON.stringify(data))) as Array<ChartDataItem>).reduce((acc: any, cur)=>{
-      acc[cur.src_office_id] = acc[cur.src_office_id] || {
-        src_office_id: cur.src_office_id,
-        office_name: cur.office_name,
-        dt_date: [],
-        qty_orders: [],
-        qty_new: [],
-        qty_delivered: [],
-        qty_return: [],
-      };
-      acc[cur.src_office_id].dt_date.push(cur.dt_date);
-      acc[cur.src_office_id].qty_orders.push(cur.qty_orders);
-      acc[cur.src_office_id].qty_new.push(cur.qty_new);
-      acc[cur.src_office_id].qty_delivered.push(cur.qty_delivered);
-      acc[cur.src_office_id].qty_return.push(cur.qty_return);
-      return acc;
-    },[]).filter((el: any) => el !== undefined);
+      if (acc.get(cur.src_office_id)) {
+        acc.get(cur.src_office_id).data.qty_orders.push(cur.qty_orders);
+        acc.get(cur.src_office_id).data.qty_new.push(cur.qty_new);
+        acc.get(cur.src_office_id).data.qty_delivered.push(cur.qty_delivered);
+        acc.get(cur.src_office_id).data.qty_return.push(cur.qty_return);
+        acc.get(cur.src_office_id).labels.push(cur.dt_date);
+      } else {
+        const data = {
+          qty_orders: [cur.qty_orders],
+          qty_new: [cur.qty_new],
+          qty_delivered: [cur.qty_delivered],
+          qty_return: [cur.qty_return],
+        };
+        const labels = [cur.dt_date]
+        const src_office_id = cur.src_office_id;
+        acc.set(cur.src_office_id, {src_office_id, labels, data});
+      }
+      //console.log("new way parsed item: ", acc)
+       return acc;
+    },new Map());
 
 
   }
@@ -87,34 +90,35 @@ export class ChartsService {
   //   });
   // }
 
-  createChart(chartItem: ChartParsedDataItem, index: number | string) {
-    const chartId = `myChart-${index}`;
+  createChart(id: number | string, labels: Array<string>, data: ChartParsedItemData ) {
+
+    const chartId = `myChart-${id}`;
     const datasets = [
       {
         label: 'qty_orders',
-        data: chartItem.qty_orders,
+        data: data.qty_orders,
         borderWidth: 1
       },
       {
         label: 'qty_new',
-        data: chartItem.qty_new,
+        data: data.qty_new,
         borderWidth: 1
       },
       {
         label: 'qty_delivered',
-        data: chartItem.qty_delivered,
+        data: data.qty_delivered,
         borderWidth: 1
       },
       {
         label: 'qty_return',
-        data: chartItem.qty_return,
+        data: data.qty_return,
         borderWidth: 1
       },
-    ]
+    ];
     const chart = new Chart(chartId, {
       type: 'line',
       data: {
-        labels: chartItem.dt_date,
+        labels: labels,
         datasets: datasets
       },
       options: {
@@ -170,7 +174,7 @@ export class ChartsService {
 
 
   parseGeneralChartData() {
-    return (Array.from(JSON.parse(JSON.stringify(data))) as Array<ChartDataItem>).reduce((acc: any, cur)=>{
+    const parsed = (Array.from(JSON.parse(JSON.stringify(data))) as Array<ChartDataItem>).reduce((acc: any, cur)=>{
       if (acc.get(cur.dt_date)) {
         const data = {
           qty_orders: acc.get(cur.dt_date).qty_orders + cur.qty_orders,
@@ -188,10 +192,43 @@ export class ChartsService {
         };
         acc.set(cur.dt_date, data);
       }
-      //acc.ser()
+
+      // if (acc.get(cur.dt_date)) {
+      //   console.log(acc.get(cur.dt_date))
+      //   // acc.get(cur.dt_date).data.qty_orders.push(acc.get(cur.src_office_id).data.qty_orders + cur.qty_orders);
+      //   // acc.get(cur.dt_date).data.qty_new.push(acc.get(cur.src_office_id).data.qty_new + cur.qty_new);
+      //   // acc.get(cur.dt_date).data.qty_delivered.push(acc.get(cur.src_office_id).data.qty_delivered + cur.qty_delivered);
+      //   // acc.get(cur.dt_date).data.qty_return.push(acc.get(cur.src_office_id).data.qty_return +cur.qty_return);
+      //   //acc.get(cur.dt_date).labels.push(cur.dt_date);
+      // } else {
+      //   const data = {
+      //     qty_orders: [cur.qty_orders],
+      //     qty_new: [cur.qty_new],
+      //     qty_delivered: [cur.qty_delivered],
+      //     qty_return: [cur.qty_return],
+      //   };
+      //   const labels = [cur.dt_date]
+      //  // const src_office_id = cur.src_office_id;
+      //   acc.set(cur.dt_date, { data});
+      // }
+
       return acc;
     }, new Map());
 
+
+    let chart = { labels: [], data: {qty_orders: <any[]>[], qty_new: <any[]>[], qty_delivered: <any[]>[], qty_return: <any[]>[]}};
+    chart.labels = Array.from(parsed.keys());
+    //chart.data = Array.from(parsed.values());
+    Array.from(parsed.values()).forEach((el: any) => {
+      chart.data.qty_orders.push(el.qty_orders);
+      chart.data.qty_new.push(el.qty_new);
+      chart.data.qty_delivered.push(el.qty_delivered);
+      chart.data.qty_return.push(el.qty_return);
+    })
+    console.log("labels: ", chart.labels)
+    console.log("data: ", chart.data)
+
+    return chart;
   }
 
 }
