@@ -1,7 +1,7 @@
-import {Component, ElementRef, OnInit, QueryList, ViewChildren} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { Chart, registerables } from 'chart.js';
 import {ChartsService} from "../../services/charts.service";
-import {ChartParsedDataItem, ChartParsedItem} from "../../model/chart";
+import {ChartGeneralParsedData, ChartParsedItem} from "../../model/chart";
 Chart.register(...registerables);
 
 @Component({
@@ -11,9 +11,8 @@ Chart.register(...registerables);
 })
 export class ChartsComponent implements OnInit {
 
-  public chartsData!: Array<ChartParsedDataItem>;
-  public generalChartData!: any;
-  public chartData1!: any;
+  public chartsData!: Array<ChartParsedItem>;
+  public generalChartData!: ChartGeneralParsedData;
   chartsInRow: number = 4;
   rows!: any;
   constructor(
@@ -23,13 +22,13 @@ export class ChartsComponent implements OnInit {
 
   ngOnInit(): void {
     this.generalChartData = this.chartsService.parseGeneralChartData();
-    this.chartData1 = Array.from(this.chartsService.parseChartData1());
+    this.chartsData = this.chartsService.parseChartData1();
     this.rows = [];
-    for (let i=0; i<this.chartData1.length; i++) {
+    for (let i=0; i<this.chartsData.length; i++) {
       if (i % this.chartsInRow == 0) {
         this.rows.push([])
       }
-      this.rows[this.rows.length - 1].push(this.chartData1[i]);
+      this.rows[this.rows.length - 1].push(this.chartsData[i]);
     }
   }
 }
