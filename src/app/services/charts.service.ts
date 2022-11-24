@@ -43,52 +43,11 @@ export class ChartsService {
         const src_office_id = cur.src_office_id;
         acc.set(cur.src_office_id, {src_office_id, labels, data});
       }
-      //console.log("new way parsed item: ", acc)
        return acc;
     },new Map());
 
 
   }
-
-  // createChart(chartItem: ChartParsedDataItem) {
-  //   const chartId = 'myChart-' + chartItem.src_office_id;
-  //   const datasets = [
-  //     {
-  //       label: 'qty_orders',
-  //       data: chartItem.qty_orders,
-  //       borderWidth: 1
-  //     },
-  //     {
-  //       label: 'qty_new',
-  //       data: chartItem.qty_new,
-  //       borderWidth: 1
-  //     },
-  //     {
-  //       label: 'qty_delivered',
-  //       data: chartItem.qty_delivered,
-  //       borderWidth: 1
-  //     },
-  //     {
-  //       label: 'qty_return',
-  //       data: chartItem.qty_return,
-  //       borderWidth: 1
-  //     },
-  //   ]
-  //   const chart = new Chart(chartId, {
-  //     type: 'line',
-  //     data: {
-  //       labels: chartItem.dt_date,
-  //       datasets: datasets
-  //     },
-  //     options: {
-  //       scales: {
-  //         x: {
-  //           beginAtZero: true,
-  //         }
-  //       }
-  //     }
-  //   });
-  // }
 
   createChart(id: number | string, labels: Array<string>, data: ChartParsedItemData ) {
 
@@ -125,53 +84,22 @@ export class ChartsService {
         scales: {
           x: {
             beginAtZero: true,
+          },
+          y: {
+            ticks: {
+              precision: 0
+            }
+          }
+        },
+        plugins: {
+          title: {
+            display: typeof id === "number",
+            text: `Chart for ${id} office `
           }
         }
       }
     });
   }
-
-  // createGeneralChart(chartItem: Map<any, any>) {
-  //   const chartId = `myChart-general`;
-  //   const datasets = [
-  //     {
-  //       label: 'qty_orders',
-  //       data: chartItem.qty_orders,
-  //       borderWidth: 1
-  //     },
-  //     {
-  //       label: 'qty_new',
-  //       data: chartItem.qty_new,
-  //       borderWidth: 1
-  //     },
-  //     {
-  //       label: 'qty_delivered',
-  //       data: chartItem.qty_delivered,
-  //       borderWidth: 1
-  //     },
-  //     {
-  //       label: 'qty_return',
-  //       data: chartItem.qty_return,
-  //       borderWidth: 1
-  //     },
-  //   ];
-  //
-  //   const chart = new Chart(chartId, {
-  //     type: 'line',
-  //     data: {
-  //       labels: chartItem.keys().,
-  //       datasets: datasets
-  //     },
-  //     options: {
-  //       scales: {
-  //         x: {
-  //           beginAtZero: true,
-  //         }
-  //       }
-  //     }
-  //   });
-  // }
-
 
   parseGeneralChartData() {
     const parsed = (Array.from(JSON.parse(JSON.stringify(data))) as Array<ChartDataItem>).reduce((acc: any, cur)=>{
@@ -192,33 +120,12 @@ export class ChartsService {
         };
         acc.set(cur.dt_date, data);
       }
-
-      // if (acc.get(cur.dt_date)) {
-      //   console.log(acc.get(cur.dt_date))
-      //   // acc.get(cur.dt_date).data.qty_orders.push(acc.get(cur.src_office_id).data.qty_orders + cur.qty_orders);
-      //   // acc.get(cur.dt_date).data.qty_new.push(acc.get(cur.src_office_id).data.qty_new + cur.qty_new);
-      //   // acc.get(cur.dt_date).data.qty_delivered.push(acc.get(cur.src_office_id).data.qty_delivered + cur.qty_delivered);
-      //   // acc.get(cur.dt_date).data.qty_return.push(acc.get(cur.src_office_id).data.qty_return +cur.qty_return);
-      //   //acc.get(cur.dt_date).labels.push(cur.dt_date);
-      // } else {
-      //   const data = {
-      //     qty_orders: [cur.qty_orders],
-      //     qty_new: [cur.qty_new],
-      //     qty_delivered: [cur.qty_delivered],
-      //     qty_return: [cur.qty_return],
-      //   };
-      //   const labels = [cur.dt_date]
-      //  // const src_office_id = cur.src_office_id;
-      //   acc.set(cur.dt_date, { data});
-      // }
-
       return acc;
     }, new Map());
 
 
     let chart = { labels: [], data: {qty_orders: <any[]>[], qty_new: <any[]>[], qty_delivered: <any[]>[], qty_return: <any[]>[]}};
     chart.labels = Array.from(parsed.keys());
-    //chart.data = Array.from(parsed.values());
     Array.from(parsed.values()).forEach((el: any) => {
       chart.data.qty_orders.push(el.qty_orders);
       chart.data.qty_new.push(el.qty_new);
