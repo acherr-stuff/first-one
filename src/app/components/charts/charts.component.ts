@@ -12,18 +12,17 @@ Chart.register(...registerables);
 export class ChartsComponent implements OnInit {
 
   public chartsData!: Array<ChartParsedItem>;
-  public generalChartData!: ChartGeneralParsedData;
+  public generalChartData!: ChartParsedItem;
   chartsInRow: number = 4;
-  rows!: any;
+  rows: ChartParsedItem[][] = [];
   constructor(
       private chartsService: ChartsService,
   ) { }
 
 
   ngOnInit(): void {
-    this.generalChartData = this.chartsService.parseGeneralChartData();
     this.chartsData = this.chartsService.parseChartData1();
-    this.rows = [];
+    this.chartsData.push(this.chartsService.parseGeneralChartData())
     for (let i=0; i<this.chartsData.length; i++) {
       if (i % this.chartsInRow == 0) {
         this.rows.push([])

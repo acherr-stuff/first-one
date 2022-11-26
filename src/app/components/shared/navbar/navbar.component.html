@@ -1,5 +1,5 @@
 <header class="header container">
-    <div class="header-left d-flex">
+    <div class="header-left d-flex align-items-center">
         <img src="assets/images/logo.svg" alt="" class="logo">
         <ul class="menu d-flex">
             <li class="menu-item">About Us</li>
@@ -12,10 +12,12 @@
     </div>
     <div class="header-right d-flex">
         <button class="btn btn-header">Get consultation</button>
-        <div class="sign d-flex">
-            <img src="assets/images/icons/person.svg" alt="" class="i-person">
+        <div class="sign d-flex align-items-center">
+            <mat-icon [svgIcon]="personIcon" class="i-person"></mat-icon>
             <div class="sign-links d-flex align-items-center">
-                <a href="" (click)="openSignInDialog($event)">Log in</a><span> / </span><a href="#" (click)="openSignUpDialog($event)">Register</a>
+                <a href="" (click)="openSignInDialog($event)">Log in</a>
+                <span> / </span>
+                <a href="#" (click)="openSignUpDialog($event)">Register</a>
             </div>
         </div>
     </div>

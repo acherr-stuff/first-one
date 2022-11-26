@@ -17,6 +17,11 @@ export enum Icons {
     ArrPrev = 'arr-prev',
     Clock = 'clock',
     Person = 'person',
+    Iphone = 'iphone',
+    Message = 'message',
+    Heart = 'heart',
+    Chat = 'chat',
+    Pin = 'pin'
 }
 
 export enum SocialIcons {

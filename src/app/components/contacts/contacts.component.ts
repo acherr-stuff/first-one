@@ -9,6 +9,19 @@ declare var ymaps:any;
 })
 export class ContactsComponent implements OnInit {
 
+  public contacts = {
+    phone: { href: "tel:+4055550128", label: "(405) 555-0128" },
+    email: { href: "mailto: hello@createx.com", label: "hello@createx.com" },
+    address: "2464 Royal Ln. Mesa, New Jersey 45463, USA"
+  }
+
+  public icons = {
+    chat: "chat",
+    iphone: "iphone",
+    pin: "pin"
+  }
+
+
   public map: any;
   public socialIcons: Array<string> = ["facebook", "twitter", "youtube", "telegram", "instagram", "linkedin"]
   constructor() { }

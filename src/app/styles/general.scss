@@ -99,10 +99,8 @@ h6 {
 
 .input {
   background: $white;
-  //height: 44px;
   border: 1px solid $gray-400;
   border-radius: 4px;
- // padding: 13px 16px;
   outline: none;
 
   &-group {
@@ -111,7 +109,6 @@ h6 {
 
   &::placeholder {
     color: $gray-600;
-   // font-size: 14px;
     line-height: 160%;
   }
 
@@ -123,7 +120,6 @@ h6 {
   &-field {
     display: flex;
     flex-direction: column;
-    //margin-bottom: 20px;
   }
 }
 
@@ -181,7 +177,9 @@ input[type="checkbox"] + label {
   &-submit {
     width: 100%;
     font-weight: 700;
-    //margin-top: 24px;
-    //margin-bottom: 24px;
   }
+}
+
+.i-social.mat-icon:hover ::ng-deep svg {
+  fill: $red;
 }

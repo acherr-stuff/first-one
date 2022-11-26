@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
 import {SignInComponent} from "../../sign-in/sign-in.component";
 import {SignUpComponent} from "../../sign-up/sign-up.component";
+import {IconService} from "../../../services/icon.service";
 
 @Component({
   selector: 'app-navbar',
@@ -10,11 +11,12 @@ import {SignUpComponent} from "../../sign-up/sign-up.component";
 })
 export class NavbarComponent implements OnInit {
 
+  personIcon = "person";
+
   constructor(public dialog: MatDialog) {}
 
   openSignInDialog(event: Event) {
     event.preventDefault();
-    console.log("dialogOpened");
     const dialogRef = this.dialog.open(SignInComponent);
 
     dialogRef.afterClosed().subscribe(result => {

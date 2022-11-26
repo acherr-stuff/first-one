@@ -17,14 +17,8 @@
         </div>
         <div class="post-socials d-flex align-items-center">
             <div class="text"><b>Share: </b></div>
-            <a href="" class="icon">
-                <mat-icon svgIcon="facebook" class="social-icon"></mat-icon>
-            </a>
-            <a href="" class="icon">
-                <mat-icon svgIcon="twitter" class="social-icon"></mat-icon>
-            </a>
-            <a href="" class="icon">
-                <mat-icon svgIcon="linkedin" class="social-icon"></mat-icon>
+            <a href="" class="icon" *ngFor="let icon of socialIcons">
+                <mat-icon [svgIcon]="icon" class="social-icon i-social"></mat-icon>
             </a>
         </div>
 
@@ -65,14 +59,8 @@
         </div>
         <div class="post-socials d-flex align-items-center">
             <div class="text"><b>Share: </b></div>
-            <a href="" class="icon">
-                <mat-icon svgIcon="facebook" class="social-icon"></mat-icon>
-            </a>
-            <a href="" class="icon">
-                <mat-icon svgIcon="twitter" class="social-icon"></mat-icon>
-            </a>
-            <a href="" class="icon">
-                <mat-icon svgIcon="linkedin" class="social-icon"></mat-icon>
+            <a href="" class="icon" *ngFor="let icon of socialIcons">
+                <mat-icon [svgIcon]="icon" class="social-icon i-social"></mat-icon>
             </a>
         </div>
 

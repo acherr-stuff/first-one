@@ -23,8 +23,6 @@ p {
     .divider {
       margin: 0 12px;
     }
-
-
   }
 
   &-title {
@@ -53,9 +51,6 @@ p {
       width: 20px;
     }
 
-    .social-icon.mat-icon:hover ::ng-deep svg {
-      fill: $red;
-    }
   }
 
   &-content {
@@ -133,5 +128,3 @@ p {
     }
   }
 }
-
-

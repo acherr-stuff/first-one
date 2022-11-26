@@ -10,7 +10,7 @@
                     <ul class="footer-social d-flex">
                         <li class="footer-social-item" *ngFor="let icon of socialIcons">
                             <a href="#" class="footer-social-link">
-                                <mat-icon class="i-social" svgIcon="{{icon}}"></mat-icon>
+                                <mat-icon class="i-social" [svgIcon]="icon"></mat-icon>
                             </a>
                         </li>
                     </ul>
@@ -39,20 +39,12 @@
                     <h6 class="footer-title">CONTACT US</h6>
                     <ul class="footer-list">
                         <li class="footer-item">
-                            <object
-                                    type="image/svg+xml"
-                                    data="assets/images/icons/iphone2.svg">
-                                <img src="assets/images/icons/iphone2.svg">
-                            </object>
-                            <a href="tel:+4055550128">(405) 555-0128</a>
+                            <mat-icon class="icon i-contacts" [svgIcon]="icons[0]"></mat-icon>
+                            <a [href]="contacts.phone.href">{{contacts.phone.label}}</a>
                         </li>
                         <li class="footer-item">
-                            <object
-                                    type="image/svg+xml"
-                                    data="assets/images/icons/message2.svg">
-                                <img src="assets/images/icons/message2.svg">
-                            </object>
-                            <a href="mailto: hello@createx.com">hello@createx.com</a>
+                            <mat-icon class="icon i-contacts" [svgIcon]="icons[1]"></mat-icon>
+                            <a [href]="contacts.email.href">{{contacts.email.label}}</a>
                         </li>
                     </ul>
                 </div>
@@ -78,13 +70,10 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="columns space-between">
-                <div class="col">
+                <div class="col d-flex">
                     <span class="text">© All rights reserved. Made with </span>
-                    <object
-                            type="image/svg+xml"
-                            data="assets/images/icons/heart.svg">
-                        <img src="assets/images/icons/heart.svg">
-                    </object>
+                    <mat-icon class="i-heart" [svgIcon]="icons[2]"></mat-icon>
+
                     <span class="text"> by Createx Studio </span>
                 </div>
                 <div class="col">

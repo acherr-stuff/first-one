@@ -28,13 +28,14 @@ export class ChartsService {
         };
         const labels = [cur.dt_date]
         const src_office_id = cur.src_office_id;
-        acc.set(cur.src_office_id, {src_office_id, labels, data});
+        const office_name = cur.office_name;
+        acc.set(cur.src_office_id, {src_office_id, office_name, labels, data});
       }
        return acc;
     },new Map()).values());
   }
 
-  createChart(id: number | string, labels: Array<string>, data: ChartParsedItemData ) {
+  createChart(id: number | string,  labels: Array<string>, data: ChartParsedItemData, office_name?: string, ) {
     const chartId = `myChart-${id}`;
     const datasets = [
       {
@@ -77,15 +78,15 @@ export class ChartsService {
         },
         plugins: {
           title: {
-            display: typeof id === "number",
-            text: `Chart for ${id} office `
+            display: true,
+            text: office_name
           }
         }
       }
     });
   }
 
-  parseGeneralChartData(): ChartGeneralParsedData {
+  parseGeneralChartData(): ChartParsedItem {
     const parsed = (Array.from(JSON.parse(JSON.stringify(data))) as Array<ChartDataItem>).reduce((acc: Map<string, any>, cur)=>{
       if (acc.get(cur.dt_date)) {
         const data = {
@@ -108,7 +109,7 @@ export class ChartsService {
     }, new Map());
 
 
-    const chart: ChartGeneralParsedData = { labels: <string[]>[], data: {qty_orders: <number[]>[], qty_new: <number[]>[], qty_delivered: <number[]>[], qty_return: <number[]>[]}};
+    const chart: ChartParsedItem = {src_office_id: "general", office_name: "General Chart", labels: <string[]>[], data: {qty_orders: <number[]>[], qty_new: <number[]>[], qty_delivered: <number[]>[], qty_return: <number[]>[]}};
     chart.labels = Array.from(parsed.keys());
     Array.from(parsed.values()).forEach((el: any) => {
       chart.data.qty_orders.push(el.qty_orders);

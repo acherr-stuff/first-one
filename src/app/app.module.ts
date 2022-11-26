@@ -54,7 +54,7 @@ import { ChartComponent } from './components/charts/chart/chart.component';
     BrowserAnimationsModule,
     MatDialogModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [IconService, ChartsService],
   bootstrap: [AppComponent]

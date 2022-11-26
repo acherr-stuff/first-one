@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
+  socialIcons = ["facebook", "twitter", "linkedin"]
+
   constructor() { }
 
   ngOnInit(): void {

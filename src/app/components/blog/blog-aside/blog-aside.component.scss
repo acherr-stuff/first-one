@@ -1,9 +1,6 @@
 @import "../../../styles/general";
 @import "../../../styles/blog";
 
-//:host {
-//  width: 342px;
-//}
 
 .aside {
 
@@ -63,10 +60,6 @@
         .icon {
           width: 20px;
           height: 20px;
-        }
-
-        .icon:hover ::ng-deep svg {
-            fill: $red;
         }
       }
     }
