@@ -5,6 +5,7 @@
 p {
   margin: 0;
 }
+
 .post {
   max-width: 810px;
   color: $gray-800;
@@ -32,6 +33,7 @@ p {
 
   &-header {
     color: $gray-700;
+
     &-info {
       gap: 25px;
 
@@ -80,6 +82,7 @@ p {
     margin-top: 48px;
     margin-bottom: 48px;
   }
+
   &-quote:before {
     content: "";
     position: absolute;
@@ -92,6 +95,7 @@ p {
 
   &-list {
     margin-bottom: 24px;
+
     &-item {
       position: relative;
       margin-bottom: 4px;

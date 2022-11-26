@@ -18,7 +18,7 @@
             <input id="email" type="text" class="input" placeholder="Your working email">
         </div>
         <div class="input-field input-group col-12">
-            <label for="password" class="input-label" >Password</label>
+            <label for="password" class="input-label">Password</label>
             <div class="input-group">
                 <input id="password" [type]="isPasswordVisible ? 'text' : 'password'" class="input col-12">
                 <button class="show" *ngIf="!isPasswordVisible" (click)="togglePassword($event)"></button>
