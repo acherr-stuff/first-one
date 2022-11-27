@@ -30,4 +30,8 @@ export class ChartsComponent implements OnInit {
       this.rows[this.rows.length - 1].push(this.chartsData[i]);
     }
   }
+
+  openChartFullScreen() {
+
+  }
 }

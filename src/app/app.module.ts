@@ -26,6 +26,10 @@ import { PostCardSmallComponent } from './components/blog/post-card-small/post-c
 import { ChartsComponent } from './components/charts/charts.component';
 import {ChartsService} from "./services/charts.service";
 import { ChartComponent } from './components/charts/chart/chart.component';
+import {HostsService} from "./services/hosts.service";
+
+export function hostFactory() { return window.location.host; }
+
 
 @NgModule({
   declarations: [
@@ -56,7 +60,12 @@ import { ChartComponent } from './components/charts/chart/chart.component';
     MatCardModule,
     MatIconModule,
   ],
-  providers: [IconService, ChartsService],
+  providers: [
+    IconService,
+    ChartsService,
+    HostsService,
+    { provide: 'HOSTNAME', useFactory: hostFactory }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
