@@ -7,7 +7,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import {InlineSVGModule} from "ng-inline-svg-2";
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
@@ -32,6 +32,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import { PaginationComponent } from './components/blog/ui/pagination/pagination.component';
 import { BlogContentComponent } from './components/blog/wigets/blog-content/blog-content.component';
 import {ModalService} from "./services/modal.service";
+import {HeadersInterceptor} from "./interceptors/headers.interceptor";
 
 @NgModule({
   declarations: [
@@ -64,13 +65,18 @@ import {ModalService} from "./services/modal.service";
     MatDialogModule,
     MatCardModule,
     MatIconModule,
-    MatPaginatorModule
+    MatPaginatorModule,
   ],
   providers: [
     IconService,
     ChartsService,
     HostsService,
-    ModalService
+    ModalService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HeadersInterceptor,
+      multi: true,
+    },
   ],
   bootstrap: [AppComponent]
 })
