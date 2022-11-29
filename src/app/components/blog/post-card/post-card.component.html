@@ -1,38 +1,37 @@
 <mat-card class="post-card">
     <div class="post-card-picture">
-        <img appMonochrome src="{{image}}" alt="">
+        <img appMonochrome src="{{ post.image}}" alt="">
         <div class="post-card-category d-flex align-items-center nowrap">
             <mat-icon svgIcon="files" class="icon info-icon"></mat-icon>
-            <div class="text">{{ type }}</div>
+            <div class="text">{{ post.type }}</div>
         </div>
     </div>
     <mat-card-subtitle class="post-card-info d-flex">
-        <div class="post-card-info-item category">{{ category }}</div>
+        <div class="post-card-info-item category">{{ post.category }}</div>
         <div class="divider">|</div>
         <div class="post-card-info-item d-flex align-items-center">
             <mat-icon svgIcon="calendar" class="icon info-icon"></mat-icon>
-            <div class="text"> {{ date }} </div>
+            <div class="text"> {{ post.date }} </div>
         </div>
-        <ng-container *ngIf="timeToListen !== undefined">
+        <ng-container *ngIf="post.timeToListen !== undefined">
             <div class="divider">|</div>
             <div class="post-card-info-item d-flex align-items-center">
                 <mat-icon svgIcon="clock" class="icon info-icon"></mat-icon>
-                <div class="text"> {{ timeToListen }} </div>
+                <div class="text"> {{ post.timeToListen }} </div>
             </div>
         </ng-container>
 
     </mat-card-subtitle>
     <mat-card-title class="post-card-title">
-        {{ title }}
+        {{ post.title }}
     </mat-card-title>
     <mat-card-content>
         <p class="post-card-text">
-            {{text}}
+            {{ post.text }}
         </p>
     </mat-card-content>
     <mat-card-actions class="post-card-actions">
         <button mat-button class="btn-listen">Listen
-
             <mat-icon class="icon" svgIcon="arr-next"></mat-icon>
         </button>
     </mat-card-actions>

@@ -11,9 +11,7 @@
             </div>
         </div>
         <div class="d-flex nowrap space-between">
-            <app-post-card *ngFor="let preview of postPreviews" [category]="preview.category" [type]="preview.type"
-                           [image]="preview.image" [date]="preview.date" [timeToListen]="preview.timeToListen"
-                           [title]="preview.title" [text]="preview.text"></app-post-card>
+            <app-post-card *ngFor="let post of posts; let i = index" [post]="post"></app-post-card>
         </div>
     </div>
     <div class="recommendations-bottom d-flex justify-content-center align-items-center">

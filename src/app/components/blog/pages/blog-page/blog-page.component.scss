@@ -1,0 +1,72 @@
+@import "../../../../styles/general";
+@import "../../../../styles/blog";
+
+
+.blog {
+  margin-top: 80px;
+  margin-bottom: 120px;
+  @include main-font;
+
+  &-menu {
+    margin-top: 20px;
+    color: $gray-800;
+
+    &-select {
+      width: 160px;
+    }
+
+    &-search {
+      width: 285px;
+    }
+
+    &-right {
+
+      gap: 20px;
+
+      .label {
+        margin-right: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+      }
+    }
+
+    &-category {
+      margin-right: 8px;
+      padding: 10px 20px;
+      color: $gray-600;
+      border-radius: 4px;
+      border: 1px solid transparent;
+
+      .icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+
+         ::ng-deep svg {
+          fill: $gray-600;
+        }
+      }
+
+      .label {
+        @include main-font;
+        font-weight: 700;
+        font-size: 16px;
+      }
+
+      &.active, &:hover {
+        color: $red;
+        border: 1px solid $red;
+
+        .icon ::ng-deep svg {
+          fill: $red;
+        }
+      }
+    }
+  }
+
+  &-pagination {
+    margin: 80px auto 180px auto;
+    width: fit-content;
+  }
+}

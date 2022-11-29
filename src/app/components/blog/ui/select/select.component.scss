@@ -1,0 +1,76 @@
+@import "../../../../styles/general";
+@import "../../../../styles/blog";
+
+//select {
+//  // A reset of styles, including removing the default dropdown arrow
+//  appearance: none;
+//  // Additional resets for further consistency
+//  background-color: transparent;
+//  border: none;
+//  padding: 0 1em 0 0;
+//  margin: 0;
+//  width: 100%;
+//  font-family: inherit;
+//  font-size: inherit;
+//  cursor: inherit;
+//  line-height: inherit;
+//}
+
+//.select {
+//  height: 44px;
+//  background-color: $white;
+//  border: 1px solid $gray-400;
+//  border-radius: 4px;
+//  padding-left: 16px;
+//  background-repeat: no-repeat;
+//  background-position: calc(100% - 0.25em) 0.35em;
+//  background-size: 0.85em auto;
+////  background-image: url("");
+//
+//}
+
+//*:focus{
+//  outline:none;
+//}
+//*{
+//  box-sizing:border-box;
+//}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding:5px 30px 5px 10px;
+  height: 44px;
+  background-color: $white;
+  border: 1px solid $gray-400;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  width: 100%;
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+.select-wrapper {
+  position: relative;
+
+  .select-icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+  }
+}
+
+//.select-wrapper::after {
+//  position: absolute;
+//  content: "";
+//  width: 16px;
+//  height: 16px;
+//  background:url("../../../../../assets/images/icons/select-down-arr.svg") no-repeat right 14px;
+//}

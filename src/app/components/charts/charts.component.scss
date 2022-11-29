@@ -1,6 +1,16 @@
 @import "../../styles/general";
 
 
+.chart-wrapper {
+  position: relative;
+}
+
+.open-full {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .charts {
   margin-top: 80px;
 

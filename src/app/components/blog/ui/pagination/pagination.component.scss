@@ -1,0 +1,20 @@
+@import "../../../../styles/general";
+@import "../../../../styles/blog";
+
+.pagination
+{
+  @include main-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: $gray-800;
+  gap: 20px;
+
+  &-item:hover {
+    color: red;
+
+    .icon ::ng-deep svg {
+      fill: $red;
+    }
+  }
+}

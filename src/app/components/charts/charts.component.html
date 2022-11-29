@@ -3,7 +3,7 @@
         <h3 class="charts-title">Charts for each office</h3>
         <div class="row" *ngFor="let row of rows">
             <div class="column" *ngFor="let chart of row">
-                <app-chart [chartData]="chart"></app-chart>
+                    <app-chart class="chart" [chartData]="chart"></app-chart>
             </div>
         </div>
     </div>

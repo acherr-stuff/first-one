@@ -1,7 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import { Chart, registerables } from 'chart.js';
+import {Chart, registerables} from 'chart.js';
 import {ChartsService} from "../../services/charts.service";
-import {ChartGeneralParsedData, ChartParsedItem} from "../../model/chart";
+import {ChartParsedItem} from "../../model/chart";
+import {MatDialog} from "@angular/material/dialog";
+import {ChartComponent} from "./chart/chart.component";
 Chart.register(...registerables);
 
 @Component({
@@ -12,11 +14,11 @@ Chart.register(...registerables);
 export class ChartsComponent implements OnInit {
 
   public chartsData!: Array<ChartParsedItem>;
-  public generalChartData!: ChartParsedItem;
   chartsInRow: number = 4;
   rows: ChartParsedItem[][] = [];
   constructor(
       private chartsService: ChartsService,
+      public dialog: MatDialog
   ) { }
 
 
@@ -31,7 +33,4 @@ export class ChartsComponent implements OnInit {
     }
   }
 
-  openChartFullScreen() {
-
-  }
 }

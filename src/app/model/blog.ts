@@ -1,4 +1,4 @@
-export interface PostPreview {
+export interface Post {
     type: string;
     category: string;
     image: string;
@@ -21,7 +21,9 @@ export enum Icons {
     Message = 'message',
     Heart = 'heart',
     Chat = 'chat',
-    Pin = 'pin'
+    Pin = 'pin',
+    Play = 'play',
+    SelectDownArr = 'select-down-arr'
 }
 
 export enum SocialIcons {

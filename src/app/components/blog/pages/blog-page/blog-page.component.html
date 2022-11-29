@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="blog section">
+        <h6 class="section-subtitle text-center">Our blog</h6>
+        <h1 class="section-title text-center">Createx School Journal</h1>
+        <div class="blog-menu d-flex space-between">
+            <div class="blog-menu-left ">
+                <ul class="blog-menu-categories d-flex">
+                    <li class="blog-menu-category active d-flex">
+                        <div class="label">All</div>
+                    </li>
+                    <li class="blog-menu-category d-flex">
+                        <mat-icon class="icon" svgIcon="files"></mat-icon>
+                        <div class="label">Articles</div>
+                    </li>
+                    <li class="blog-menu-category d-flex">
+                        <mat-icon class="icon" svgIcon="play"></mat-icon>
+                        <div class="label">Videos</div>
+                    </li>
+                    <li class="blog-menu-category d-flex">
+                        <mat-icon class="icon" svgIcon="mic"></mat-icon>
+                        <div class="label">Podcasts</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="blog-menu-right d-flex ">
+                <div class="col d-flex align-items-center">
+                    <div class="label">
+                        <b>Blog category</b>
+                    </div>
+                    <app-select class="blog-menu-select"></app-select>
+                </div>
+                <app-search class="blog-menu-search"></app-search>
+            </div>
+        </div>
+        <app-blog-content [posts]="posts"></app-blog-content>
+        <div class="blog-pagination">
+            <app-pagination [pagesCount]="pagesCount"></app-pagination>
+        </div>
+    </div>
+</div>
+<app-blog-banner></app-blog-banner>

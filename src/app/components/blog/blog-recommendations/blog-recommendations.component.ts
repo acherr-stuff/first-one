@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PostPreview } from '../../../../app/model/blog'
+import {Post} from '../../../../app/model/blog'
 
 @Component({
   selector: 'app-blog-recommendations',
@@ -8,7 +8,7 @@ import { PostPreview } from '../../../../app/model/blog'
 })
 export class BlogRecommendationsComponent implements OnInit {
 
-  postPreviews: Array<PostPreview> = [
+  posts: Array<Post> = [
       {
         type: "Podcast",
         category: "Design",

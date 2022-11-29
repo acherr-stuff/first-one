@@ -11,8 +11,8 @@ import {HttpClientModule} from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
-import { BlogPostPageComponent } from './components/blog/blog-post-page/blog-post-page.component';
-import {MatDialogModule} from "@angular/material/dialog";
+import { BlogPostPageComponent } from './components/blog/pages/blog-post-page/blog-post-page.component';
+import {MatDialogModule, MatDialogRef} from "@angular/material/dialog";
 import { PostComponent } from './components/blog/post/post.component';
 import { BlogAsideComponent } from './components/blog/blog-aside/blog-aside.component';
 import {MatCardModule} from "@angular/material/card";
@@ -27,8 +27,14 @@ import { ChartsComponent } from './components/charts/charts.component';
 import {ChartsService} from "./services/charts.service";
 import { ChartComponent } from './components/charts/chart/chart.component';
 import {HostsService} from "./services/hosts.service";
+import { BlogPageComponent } from './components/blog/pages/blog-page/blog-page.component';
+import { SearchComponent } from './components/blog/ui/search/search.component';
+import { SelectComponent } from './components/blog/ui/select/select.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
+import { PaginationComponent } from './components/blog/ui/pagination/pagination.component';
+import { BlogContentComponent } from './components/blog/wigets/blog-content/blog-content.component';
 
-export function hostFactory() { return window.location.host; }
+// export function hostFactory() { return window.location.host; }
 
 
 @NgModule({
@@ -48,7 +54,12 @@ export function hostFactory() { return window.location.host; }
     MonochromeDirective,
     PostCardSmallComponent,
     ChartsComponent,
-    ChartComponent
+    ChartComponent,
+    BlogPageComponent,
+    SearchComponent,
+    SelectComponent,
+    PaginationComponent,
+    BlogContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,12 +70,13 @@ export function hostFactory() { return window.location.host; }
     MatDialogModule,
     MatCardModule,
     MatIconModule,
+    MatPaginatorModule
   ],
   providers: [
     IconService,
     ChartsService,
     HostsService,
-    { provide: 'HOSTNAME', useFactory: hostFactory }
+
   ],
   bootstrap: [AppComponent]
 })
