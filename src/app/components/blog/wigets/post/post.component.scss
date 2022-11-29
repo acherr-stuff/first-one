@@ -1,5 +1,5 @@
-@import "../../../styles/general";
-@import "../../../styles/blog";
+@import "../../../../styles/general";
+@import "../../../../styles/blog";
 
 
 p {
@@ -86,7 +86,7 @@ p {
   &-quote:before {
     content: "";
     position: absolute;
-    background-image: url("../../../../assets/images/icons/braces.svg");
+    background-image: url("../../../../../assets/images/icons/braces.svg");
     width: 28px;
     height: 20px;
     left: 0;
@@ -107,7 +107,7 @@ p {
       content: "";
       width: 16px;
       height: 16px;
-      background-image: url("../../../../assets/images/icons/check2.svg");
+      background-image: url("../../../../../assets/images/icons/check2.svg");
       left: 0;
     }
 

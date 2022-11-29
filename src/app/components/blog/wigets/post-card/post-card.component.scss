@@ -1,5 +1,5 @@
-@import "../../../styles/general";
-@import "../../../styles/blog";
+@import "../../../../styles/general";
+@import "../../../../styles/blog";
 
 
 :host {
@@ -17,7 +17,6 @@
   @include main-font;
   font-size: 16px;
   padding-bottom: 46px;
-
 }
 
 .post-card-picture {
@@ -43,14 +42,15 @@
   left: 12px;
   top: 12px;
   padding: 1px 8px;
-  gap: 8px;
   border-radius: 4px;
 
   .icon {
     height: 16px;
   }
 
-
+  .text {
+    font-size: 14px;
+  }
 }
 
 .post-card-info.mat-card-subtitle {

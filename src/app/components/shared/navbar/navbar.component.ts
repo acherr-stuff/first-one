@@ -3,6 +3,7 @@ import {MatDialog} from "@angular/material/dialog";
 import {SignInComponent} from "../../sign-in/sign-in.component";
 import {SignUpComponent} from "../../sign-up/sign-up.component";
 import {IconService} from "../../../services/icon.service";
+import {ModalService} from "../../../services/modal.service";
 
 @Component({
   selector: 'app-navbar',
@@ -13,24 +14,17 @@ export class NavbarComponent implements OnInit {
 
   personIcon = "person";
 
-  constructor(public dialog: MatDialog) {}
+  constructor(
+      public dialog: MatDialog,
+      private modalService: ModalService
+      ) {}
 
   openSignInDialog(event: Event) {
-    event.preventDefault();
-    const dialogRef = this.dialog.open(SignInComponent);
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
+    this.modalService.openDialog(event, SignInComponent)
   }
 
   openSignUpDialog(event: Event) {
-    event.preventDefault();
-    const dialogRef = this.dialog.open(SignUpComponent);
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
+    this.modalService.openDialog(event, SignUpComponent)
   }
 
   ngOnInit(): void {

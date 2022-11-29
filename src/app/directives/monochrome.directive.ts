@@ -1,10 +1,9 @@
-import {Directive, ElementRef, HostListener} from '@angular/core';
+import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appMonochrome]'
+  selector: '[appMonochrome]',
 })
 export class MonochromeDirective {
-
   constructor(private el: ElementRef) {}
 
   @HostListener('mouseenter') onMouseEnter() {
@@ -16,7 +15,6 @@ export class MonochromeDirective {
   }
 
   setMonochromeFilter(val: number): void {
-    this.el.nativeElement.style.filter = `grayscale(${val}%)`
+    this.el.nativeElement.style.filter = `grayscale(${val}%)`;
   }
-
 }

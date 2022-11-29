@@ -5,6 +5,18 @@
 <div class="banner-wrap">
     <app-blog-banner></app-blog-banner>
 </div>
-<div class="container">
-    <app-blog-content [posts]="posts"></app-blog-content>
+<div class="section recommend container">
+    <h6 class="section-subtitle">Our blog</h6>
+    <h1 class="section-title">You may also like</h1>
+    <div class="recommend-posts">
+        <div class="slider-buttons d-flex">
+            <button class="btn-prev">
+                <mat-icon svgIcon="arr-prev" class="icon"></mat-icon>
+            </button>
+            <div class="btn-next">
+                <mat-icon svgIcon="arr-next" class="icon"></mat-icon>
+            </div>
+        </div>
+        <app-blog-content [posts]="posts"></app-blog-content>
+    </div>
 </div>

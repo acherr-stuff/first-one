@@ -14,16 +14,17 @@
     gap: 30px;
 
     &-item {
-      width: calc((100% - 60px)/3);
+      width: calc((100% - 60px) / 3);
     }
 
     &-item:nth-child(4) {
-      width: calc((100% - 30px)/12*7);
+      width: calc((100% - 30px) / 12 * 7);
     }
 
     &-item:nth-child(5) {
-      width: calc((100% - 30px)/12*5);
+      width: calc((100% - 30px) / 12 * 5);
     }
+
     //flex-basis: 33%;
 
     //display: grid;

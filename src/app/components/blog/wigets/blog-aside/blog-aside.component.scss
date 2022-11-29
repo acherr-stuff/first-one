@@ -1,5 +1,5 @@
-@import "../../../styles/general";
-@import "../../../styles/blog";
+@import "../../../../styles/general";
+@import "../../../../styles/blog";
 
 
 .aside {
@@ -114,25 +114,3 @@
   }
 }
 
-//.search {
-//  &-block {
-//    margin-bottom: 60px;
-//  }
-//
-//  &-input {
-//    width: 100%;
-//    height: 44px;
-//    padding-left: 16px;
-//    padding-right: 44px;
-//  }
-//
-//  &-btn {
-//    position: absolute;
-//    cursor: pointer;
-//    width: 16px;
-//    height: 16px;
-//    right: 14px;
-//    top: 14px;
-//    background-image: url("../../../../assets/images/icons/search.svg");
-//  }
-//}

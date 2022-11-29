@@ -10,7 +10,6 @@ $red: #FF3F3A;
 $orange: #F75E05;
 
 
-
 @mixin main-font {
   font-family: 'Lato', sans-serif;
   font-style: normal;
@@ -86,6 +85,7 @@ h6 {
 .section {
   margin-bottom: 170px;
   @include main-font;
+
   &-subtitle {
     letter-spacing: 1px;
     text-transform: uppercase;
